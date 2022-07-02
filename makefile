@@ -7,3 +7,7 @@ all:
 clean:
 	rm -rf ./*/*.o ./*/*/*.exe ./*/*/*.o ./*/*/*/*.o
 	rm -rf *.exe
+	rm -rf html latex
+
+doxygen:
+	doxygen
