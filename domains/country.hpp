@@ -45,14 +45,14 @@ public:
     Country(string country);
 
     /**
-     * @brief retorna qual o país armazenada no objeto
+     * @brief Retorna qual o país armazenado no objeto
      *
      * @return string com o nome do país
      */
     string getCountry();
 
     /**
-     * @brief configura o nome do país para o inserido
+     * @brief Configura o nome do país para o inserido
      *
      * @param country com o nome a ser inserido
      * @throw invalid_agument caso o valor seja inválido

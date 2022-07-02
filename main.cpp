@@ -1,13 +1,16 @@
 #include "main.hpp"
 
-int main() {
+int main()
+{
     CountryTest country = CountryTest();
-    if (country.run() == main::failure)
+    if (country.run() == Main::failure)
         cout << "Erro no teste de país" << endl;
-        return main::failure;
-    
-    cout << endl << endl << "Testes finalizados" << endl << endl;
+    return Main::failure;
 
-    return main::success;
+    cout << endl
+         << endl
+         << "Testes finalizados" << endl
+         << endl;
+
+    return Main::success;
 }
-
