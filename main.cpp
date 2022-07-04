@@ -3,13 +3,14 @@
 int main()
 {
     CountryTest country = CountryTest();
-    if (country.run() == Main::failure)
+    if (country.run() == Main::failure) {
         cout << "Erro no teste de país" << endl;
-    return Main::failure;
+        return Main::failure;
+    }
 
     cout << endl
          << endl
-         << "Testes finalizados" << endl
+         << "\033[1;32m Testes finalizados \033[0m\n" << endl
          << endl;
 
     return Main::success;
