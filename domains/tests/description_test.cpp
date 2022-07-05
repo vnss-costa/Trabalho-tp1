@@ -9,7 +9,6 @@ int DescriptionTest::run() {
     test_validation("Descrição válida");
     test_invalidation("....");
     test_invalidation("'  '");
-    test_invalidation("");
     test_invalidation("01234567890123456789012345678901234567891");
 
     destroy();

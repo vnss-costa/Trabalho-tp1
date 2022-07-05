@@ -1,6 +1,5 @@
 #include "description.hpp"
 #include <string>
-#include <ctype.h>
 #include <iostream>
 using namespace std;
 
