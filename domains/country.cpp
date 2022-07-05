@@ -1,6 +1,5 @@
 #include "country.hpp"
 #include <string>
-#include <ctype.h>
 #include <iostream>
 using namespace std;
 
