@@ -40,7 +40,7 @@
 
      City();
 
-     City(sting city);
+     City(string city);
 
      string getCity();
 
