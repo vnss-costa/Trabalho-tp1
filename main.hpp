@@ -2,6 +2,7 @@
 #include <string.h>
 
 #include "./domains/tests/country_test.hpp"
+#include "./domains/tests/password_test.hpp"
 
 /**
  * @brief Classe principal para conexão dos arquivos
