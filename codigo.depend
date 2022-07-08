@@ -1,0 +1,14 @@
+# depslib dependency file v1.0
+1657142029 source:c:\users\pedro\onedrive\documentos\unb\trabalho tp1\codigo\codigo\codigo.cpp
+	"codigo.h"
+	<string>
+
+1657205697 c:\users\pedro\onedrive\documentos\unb\trabalho tp1\codigo\codigo\codigo.h
+	<stdexcept>
+
+1657142566 source:c:\users\pedro\onedrive\documentos\unb\trabalho tp1\codigo\codigo\main.cpp
+	<iostream>
+	"codigo.h"
+
+1657142678 source:c:\users\pedro\onedrive\documentos\unb\trabalho tp1\codigo\codigo\codigo_teste.cpp
+

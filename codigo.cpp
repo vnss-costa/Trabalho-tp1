@@ -1,0 +1,33 @@
+#include "codigo.h"
+#include <string>
+
+void Codigo::validar(string codigo) const{
+    if (codigo.length() != TAMANHO_CODIGO)
+        throw invalid_argument("Tamanho Incorreto");
+
+
+    for(int i;i < codigo.length();i++){
+        //int temp = codigo[i] - '0'; //transforma o char 'num' para int num
+
+        if (isdigit(codigo[i])!= true)
+            throw invalid_argument("Por favor, entre com um código numérico");
+
+    //temporario
+    int sum;
+    sum = (codigo[0] - '0') + (codigo[1] - '0') + (codigo[2] - '0') + (codigo[3] - '0') + (codigo[4] - '0')+
+          (codigo[5] - '0') + (codigo[6] - '0') + (codigo[7] - '0') + (codigo[8] - '0') + (codigo[9] - '0');
+
+    }
+}
+
+Codigo::Codigo(string codigo){
+    validar(codigo);
+    this->codigo = codigo;
+}
+
+void Codigo::setCodigo(string codigo){
+    validar(codigo);
+    this->codigo = codigo;
+}
+
+
