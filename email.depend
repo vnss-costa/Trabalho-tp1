@@ -1,0 +1,19 @@
+# depslib dependency file v1.0
+1657307353 source:c:\users\pedro\onedrive\documentos\unb\trabalho tp1\email\email\email.cpp
+	"email.h"
+	<regex>
+
+1657307304 c:\users\pedro\onedrive\documentos\unb\trabalho tp1\email\email\email.h
+	<stdexcept>
+
+1657304047 source:c:\users\pedro\onedrive\documentos\unb\trabalho tp1\email\email\email_teste.cpp
+	"email_teste.h"
+
+1657303619 c:\users\pedro\onedrive\documentos\unb\trabalho tp1\email\email\email_teste.h
+	"email.h"
+
+1657304039 source:c:\users\pedro\onedrive\documentos\unb\trabalho tp1\email\email\main.cpp
+	<iostream>
+	"email.h"
+	"email_teste.h"
+
