@@ -1,14 +1,18 @@
 # depslib dependency file v1.0
-1657142029 source:c:\users\pedro\onedrive\documentos\unb\trabalho tp1\codigo\codigo\codigo.cpp
+1657244884 source:c:\users\pedro\onedrive\documentos\unb\trabalho tp1\codigo\codigo\codigo.cpp
 	"codigo.h"
 	<string>
 
 1657205697 c:\users\pedro\onedrive\documentos\unb\trabalho tp1\codigo\codigo\codigo.h
 	<stdexcept>
 
-1657142566 source:c:\users\pedro\onedrive\documentos\unb\trabalho tp1\codigo\codigo\main.cpp
+1657245986 source:c:\users\pedro\onedrive\documentos\unb\trabalho tp1\codigo\codigo\main.cpp
 	<iostream>
 	"codigo.h"
+	"codigo_teste.h"
 
 1657142678 source:c:\users\pedro\onedrive\documentos\unb\trabalho tp1\codigo\codigo\codigo_teste.cpp
+
+1657245626 c:\users\pedro\onedrive\documentos\unb\trabalho tp1\codigo\codigo\codigo_teste.h
+	"codigo.h"
 

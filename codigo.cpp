@@ -12,12 +12,17 @@ void Codigo::validar(string codigo) const{
         if (isdigit(codigo[i])!= true)
             throw invalid_argument("Por favor, entre com um código numérico");
 
-    //temporario
-    int sum;
-    sum = (codigo[0] - '0') + (codigo[1] - '0') + (codigo[2] - '0') + (codigo[3] - '0') + (codigo[4] - '0')+
-          (codigo[5] - '0') + (codigo[6] - '0') + (codigo[7] - '0') + (codigo[8] - '0') + (codigo[9] - '0');
-
     }
+    //temporario
+    int sum_digito, digito_verificador;
+    sum_digito = (codigo[0] - '0') + (codigo[1] - '0') + (codigo[2] - '0') + (codigo[3] - '0') + (codigo[4] - '0')+
+                 (codigo[5] - '0') + (codigo[6] - '0') + (codigo[7] - '0') + (codigo[8] - '0') + (codigo[9] - '0');
+
+
+    digito_verificador = (codigo[POSICAO_DIGITO_VERIFICADOR] - '0');
+
+    if ((sum_digito % 10) != digito_verificador)
+        throw invalid_argument("Digito verificador inválido");
 }
 
 Codigo::Codigo(string codigo){
