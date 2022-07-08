@@ -5,7 +5,7 @@ void Idioma::validar(string idioma) const{
     for(int i = 0;i < 10;i++)
         if (IDIOMAS_VALIDOS[i] == idioma)
             return;
-    throw invalid_argument("Idioma Invï¿½lido");
+    throw invalid_argument("Idioma Inválido");
 }
 
 Idioma::Idioma(string idioma){

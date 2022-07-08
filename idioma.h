@@ -4,7 +4,7 @@
 #include <stdexcept>
 
 using namespace std;
-//usar static no IDIOMAS_VALIDOS[10]?
+
 class Idioma {
     private:
         const string IDIOMAS_VALIDOS[10] = {"Ingles", "Chines Mandarim", "Hindi", "Espanhol","Frances", "Arabe", "Bengali", "Russo", "Portugues","Indonesio"};

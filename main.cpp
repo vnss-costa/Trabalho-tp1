@@ -1,13 +1,18 @@
 #include <iostream>
 #include "idioma.h"
+#include "idioma_teste.h"
 
 using namespace std;
 
 int main()
 {
-    Idioma a("Chines Mandarim");
+    TUIdioma testeA;
 
-    cout << a.getIdioma() << endl;
-
+    switch(testeA.run()){
+        case TUIdioma::SUCESSO: cout << "SUCESSO - CODIGO" << endl;
+                                break;
+        case TUIdioma::FALHA  : cout << "FALHA   - CODIGO" << endl;
+                                break;
+    }
     return 0;
 }
