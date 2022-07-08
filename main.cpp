@@ -9,9 +9,9 @@ int main()
     TUIdioma testeA;
 
     switch(testeA.run()){
-        case TUIdioma::SUCESSO: cout << "SUCESSO - CODIGO" << endl;
+        case TUIdioma::SUCESSO: cout << "Sucesso no teste do codigo (idioma)" << endl;
                                 break;
-        case TUIdioma::FALHA  : cout << "FALHA   - CODIGO" << endl;
+        case TUIdioma::FALHA  : cout << "Falha ao testar o codigo (idioma)" << endl;
                                 break;
     }
     return 0;
