@@ -8,6 +8,12 @@ int main()
         return Main::failure;
     }
 
+    DateTest date = DateTest();
+    if (date.run() == Main::failure) {
+        cout << "Erro no teste de data" << endl;
+        return Main::failure;
+    }
+
     cout << endl
          << endl
          << "\033[1;32m Testes finalizados \033[0m\n" << endl
