@@ -30,6 +30,13 @@ int main()
         return Main::failure;
     }
 
+    CityTest city = CityTest();
+    if (city.run() == Main::failure)
+    {
+        cout << "Erro no teste de cidade" << endl;
+        return Main::failure;
+    }
+
     cout << endl
          << endl
          << "\033[1;32m Testes finalizados \033[0m\n"

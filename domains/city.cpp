@@ -4,10 +4,10 @@
 
 using namespace std;
 
-City::city(string city)
+City::City(string city)
 {
     isValid(city);
-    setName(city);
+    this->city = city;
 }
 
 void City::isValid(string city)

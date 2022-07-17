@@ -1,18 +1,19 @@
 #ifndef CITY
 #define CITY
 #include <string>
-#include <iostream>
+
+using namespace std;
 
 
 /**
- * @brief Classe do domínio Idioma
+ * @brief Classe do domínio Cidade
  * 
  * @author Vanessa Paixão - 200028286
  */
 
  class City {
      private:
-        inline static const cities[20] = 
+        inline static const string cities[20] = 
         {
             "Antalya",
             "Bangkok",
@@ -33,18 +34,18 @@
             "Phuket",
             "Shenzhen",
             "Toquio"
-        }
+        };
         string city;
-        void validate(string city);
-     public:
+        void isValid(string city);
+    public:
 
-     City();
+        City();
 
-     City(string city);
+        City(string city);
 
-     string getCity();
+        string getCity();
 
-     void setName(string city); 
+        void setCity(string city); 
  };
 
  inline string City::getCity()
@@ -52,12 +53,12 @@
      return city;
  }
 
- inline void City::setName(string city)
+ inline void City::setCity(string city)
  {
      isValid(city);
      this->city = city;
  }
 
- inline City::city() {};
+ inline City::City() {};
 
  #endif

@@ -1,4 +1,4 @@
-#include <sting>
+#include <string>
 #include "../city.hpp"
 
 using namespace std;
@@ -16,7 +16,7 @@ using namespace std;
         inline static const int success = 0;
         inline static const int failure = 1;
 
-        int result
+        int result;
 
         City *city;
 
