@@ -1,15 +1,15 @@
 #ifndef TESTES_H_INCLUDED
 #define TESTES_H_INCLUDED
 
-#include "email.h"
+#include "../idiom.hpp"
 
 using namespace std;
 
-class TUEmail {
+class TUIdioma {
 private:
-    const string VALOR_VALIDO = "pedrovilarins077@gmail.com";
-    const string VALOR_INVALIDO = "pedrovilarins0777gmail.com";
-    Email *email;
+    const string VALOR_VALIDO = "Ingles";
+    const string VALOR_INVALIDO = "Japones";
+    Idioma *idioma;
     int estado;
     void setUp();
     void tearDown();

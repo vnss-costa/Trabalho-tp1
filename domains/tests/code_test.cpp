@@ -1,4 +1,4 @@
-#include "codigo_teste.h"
+#include "code_test.hpp"
 
 void TUCodigo::setUp(){
     codigo = new Codigo("12345678907");

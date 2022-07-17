@@ -1,15 +1,15 @@
 #ifndef TESTES_H_INCLUDED
 #define TESTES_H_INCLUDED
 
-#include "codigo.h"
+#include "../name.hpp"
 
 using namespace std;
 
-class TUCodigo {
+class TUNome {
 private:
-    const string VALOR_VALIDO = "12345678905";
-    const string VALOR_INVALIDO = "12345678907";
-    Codigo *codigo;
+    const string VALOR_VALIDO = "Pedro Henrique Da Costa Vilari";
+    const string VALOR_INVALIDO = "pedro Henrique Da Costa Vilari";
+    Nome *nome;
     int estado;
     void setUp();
     void tearDown();
@@ -22,3 +22,4 @@ public:
 };
 
 #endif // TESTES_H_INCLUDED
+

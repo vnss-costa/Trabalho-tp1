@@ -1,4 +1,4 @@
-#include "codigo.h"
+#include "code.hpp"
 #include <string>
 
 void Codigo::validar(string codigo) const{
@@ -10,7 +10,7 @@ void Codigo::validar(string codigo) const{
         //int temp = codigo[i] - '0'; //transforma o char 'num' para int num
 
         if (isdigit(codigo[i])!= true)
-            throw invalid_argument("Por favor, entre com um código numérico");
+            throw invalid_argument("Por favor, entre com um cï¿½digo numï¿½rico");
 
     }
     //temporario
@@ -22,7 +22,7 @@ void Codigo::validar(string codigo) const{
     digito_verificador = (codigo[POSICAO_DIGITO_VERIFICADOR] - '0');
 
     if ((sum_digito % 10) != digito_verificador)
-        throw invalid_argument("Digito verificador inválido");
+        throw invalid_argument("Digito verificador invï¿½lido");
 }
 
 Codigo::Codigo(string codigo){

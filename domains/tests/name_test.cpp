@@ -1,4 +1,4 @@
-#include "nome_teste.h"
+#include "name_test.hpp"
 
 void TUNome::setUp(){
     nome = new Nome("pedro Henrique Da Costa Vilari");

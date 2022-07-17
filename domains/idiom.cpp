@@ -1,11 +1,11 @@
-#include "idioma.h"
+#include "idiom.hpp"
 
 //percore uma string com 10 itens, para conferir se eh igual
 void Idioma::validar(string idioma) const{
     for(int i = 0;i < 10;i++)
         if (IDIOMAS_VALIDOS[i] == idioma)
             return;
-    throw invalid_argument("Idioma Inválido");
+    throw invalid_argument("Idioma Invï¿½lido");
 }
 
 Idioma::Idioma(string idioma){

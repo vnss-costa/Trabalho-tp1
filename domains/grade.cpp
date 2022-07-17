@@ -1,4 +1,4 @@
-#include "nota.h"
+#include "grade.hpp"
 
 //Valida a nota entre 0 e 10
 void Nota::validar(int nota) const{

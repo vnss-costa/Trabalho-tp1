@@ -1,15 +1,15 @@
 #ifndef TESTES_H_INCLUDED
 #define TESTES_H_INCLUDED
 
-#include "nome.h"
+#include "../email.hpp"
 
 using namespace std;
 
-class TUNome {
+class TUEmail {
 private:
-    const string VALOR_VALIDO = "Pedro Henrique Da Costa Vilari";
-    const string VALOR_INVALIDO = "pedro Henrique Da Costa Vilari";
-    Nome *nome;
+    const string VALOR_VALIDO = "pedrovilarins077@gmail.com";
+    const string VALOR_INVALIDO = "pedrovilarins0777gmail.com";
+    Email *email;
     int estado;
     void setUp();
     void tearDown();
@@ -22,4 +22,3 @@ public:
 };
 
 #endif // TESTES_H_INCLUDED
-

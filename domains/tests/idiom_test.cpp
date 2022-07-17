@@ -1,4 +1,4 @@
-#include "idioma_teste.h"
+#include "idiom_test.hpp"
 
 void TUIdioma::setUp(){
     idioma = new Idioma("Ingles");
