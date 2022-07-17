@@ -1,4 +1,4 @@
-all: country.o date.o description.o
+all: country.o date.o description.o password.o
 	+$(MAKE) -C tests
 
 country.o: country.cpp country.hpp
@@ -10,6 +10,9 @@ date.o: date.cpp date.hpp
 description.o: description.cpp description.hpp
 	g++ -std=c++17 -Wall -c description.cpp
 
+
+password.o: password.cpp password.hpp
+	g++ -std=c++17 -Wall -c password.cpp
 
 clean:
 	rm -rf *.o *.exe
