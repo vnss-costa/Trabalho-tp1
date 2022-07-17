@@ -13,6 +13,12 @@ int main()
         cout << "Erro no teste de data" << endl;
         return Main::failure;
     }
+    
+    DescriptionTest description = DescriptionTest();
+    if (description.run() == Main::failure) {
+        cout << "Erro no teste de descrição" << endl;
+        return Main::failure;
+    }
 
     cout << endl
          << endl
