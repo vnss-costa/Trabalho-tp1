@@ -1,17 +1,18 @@
 # depslib dependency file v1.0
-1658080256 source:c:\users\pedro\onedrive\documentos\unb\trabalho tp1\nome\nome\nome.cpp
-	<iostream>
+1658081286 source:c:\users\pedro\onedrive\documentos\unb\trabalho tp1\nome\nome\nome.cpp
 	"nome.h"
 
 1658078025 c:\users\pedro\onedrive\documentos\unb\trabalho tp1\nome\nome\nome.h
 	<stdexcept>
 
-1657394194 source:c:\users\pedro\onedrive\documentos\unb\trabalho tp1\nome\nome\nome_teste.cpp
+1658081163 source:c:\users\pedro\onedrive\documentos\unb\trabalho tp1\nome\nome\nome_teste.cpp
+	"nome_teste.h"
 
-1658080515 source:c:\users\pedro\onedrive\documentos\unb\trabalho tp1\nome\nome\main.cpp
+1658081261 source:c:\users\pedro\onedrive\documentos\unb\trabalho tp1\nome\nome\main.cpp
 	<iostream>
 	"nome.h"
 	"nome_teste.h"
 
-1657394182 c:\users\pedro\onedrive\documentos\unb\trabalho tp1\nome\nome\nome_teste.h
+1658081038 c:\users\pedro\onedrive\documentos\unb\trabalho tp1\nome\nome\nome_teste.h
+	"nome.h"
 

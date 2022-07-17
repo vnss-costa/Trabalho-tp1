@@ -1,9 +1,7 @@
-#include <iostream>
 #include "nome.h"
 
 void Nome::validar(string nome) const{
     int tamanho_nome = nome.length();
-        cout << tamanho_nome << endl;
 
     if (tamanho_nome > 30)
          throw invalid_argument("Tamanho Invalido");                                //confere tamanho
