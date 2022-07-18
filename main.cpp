@@ -44,12 +44,12 @@ int main()
         return Main::failure;
     }
 
-    NameTest name = NameTest();
-    if (name.run() == Main::failure)
-    {
-        cout << "Erro no teste de nome" << endl;
-        return Main::failure;
-    }
+    // NameTest name = NameTest();
+    // if (name.run() == Main::failure)
+    // {
+    //     cout << "Erro no teste de nome" << endl;
+    //     return Main::failure;
+    // }
 
     IdiomTest idiom = IdiomTest();
     if (idiom.run() == Main::failure)
@@ -58,12 +58,13 @@ int main()
         return Main::failure;
     }
 
-    // CodeTest code = CodeTest();
-    // if (code.run() == Main::failure)
-    // {
-    //     cout << "Erro no teste de código" << endl;
-    //     return Main::failure;
-    // }
+
+    CodeTest code = CodeTest();
+    if (code.run() == Main::failure)
+    {
+        cout << "Erro no teste de código" << endl;
+        return Main::failure;
+    }
 
     GradeTest grade = GradeTest();
     if (grade.run() == Main::failure)
