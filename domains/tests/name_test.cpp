@@ -1,49 +1,65 @@
+#include <string>
+#include <iostream>
 #include "name_test.hpp"
-
-void NameTest::setUp()
-{
-    nome = new Nome("pedro Henrique Da Costa Vilari");
-    estado = SUCESSO;
-}
-
-void NameTest::tearDown()
-{
-    delete nome;
-}
-
-void NameTest::testarCenarioSucesso()
-{
-    try
-    {
-        nome->setNome(VALOR_VALIDO);
-        if (nome->getNome() != VALOR_VALIDO)
-            estado = FALHA;
-    }
-    catch (invalid_argument &excecao)
-    {
-        estado = FALHA;
-    }
-}
-
-void NameTest::testarCenarioFalha()
-{
-    try
-    {
-        nome->setNome(VALOR_INVALIDO);
-        estado = FALHA;
-    }
-    catch (invalid_argument &excecao)
-    {
-        if (nome->getNome() == VALOR_INVALIDO)
-            estado = FALHA;
-    }
-}
+using namespace std;
 
 int NameTest::run()
 {
-    setUp();
-    testarCenarioSucesso();
-    testarCenarioFalha();
-    tearDown();
-    return estado;
+    create();
+
+    test_validation();
+    test_invalidation();
+
+    destroy();
+
+    return result;
+}
+
+void NameTest::create()
+{
+    name = new Name("Pedro");
+    result = success;
+}
+
+void NameTest::destroy()
+{
+    delete name;
+}
+
+void NameTest::test_validation()
+{
+    cout << "Espera-se que aceite a entrada" << endl;
+    try
+    {
+        cout << "Nome testado: " << VALOR_VALIDO << endl
+             << endl;
+        this->name->setName(VALOR_VALIDO);
+        cout << "Nome aceito!" << endl;
+    }
+    catch (invalid_argument &message)
+    {
+        cout << "Nome rejeitado!" << endl;
+        cout << "Mensagem de erro: " << message.what() << endl;
+        result = failure;
+    }
+    cout << "\n================================\n";
+}
+
+void NameTest::test_invalidation()
+{
+    cout << "Espera-se que rejeite a entrada" << endl;
+    try
+    {
+        cout << "Nome testado: " << VALOR_INVALIDO << endl
+             << endl;
+        this->name->setName(VALOR_INVALIDO);
+        cout << "Nome aceito! (Inesperado)" << endl;
+        result = failure;
+    }
+    catch (invalid_argument &message)
+    {
+        cout << "Nome rejeitado!" << endl;
+        cout << "Erro: " << message.what() << endl;
+    }
+    cout << "\n================================\n";
 }

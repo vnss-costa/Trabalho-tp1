@@ -58,7 +58,8 @@ void CityTest::test_invalidation(string city)
     }
     catch (invalid_argument &message)
     {
-        cout << "Ciade inválida!" << endl;
+        cout << "Cidade inválida!" << endl;
         cout << "Erro: " << message.what() << endl;
+        cout << "\n================================\n";
     }
 }
