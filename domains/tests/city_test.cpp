@@ -33,7 +33,7 @@ void CityTest::test_validation(string city)
     try
     {
         cout<<"Cidade testada: "<<city;
-        this->city->setName(city);
+        this->city->setCity(city);
         cout<<"Cidade válida!";
     }
     catch (invalid_argument &message)
@@ -44,13 +44,13 @@ void CityTest::test_validation(string city)
     }
 }
 
-void CityTest::test_invalidation(sting city)
+void CityTest::test_invalidation(string city)
 {
     cout<<"Esperada uma entrada invalida";
     try
     {
         cout<<"Cidade testada: "<<city;
-        this->city->setName(city);
+        this->city->setCity(city);
         cout<<"Cidade valida!";
         result=failure;
     }
