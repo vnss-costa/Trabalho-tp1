@@ -3,18 +3,18 @@
 #include "email_test.hpp"
 using namespace std;
 
-void EmailTest::setUp()
+void EmailTest::create()
 {
     email = new Email("pedrovilarins077@gmail.com");
     estado = SUCESSO;
 }
 
-void EmailTest::tearDown()
+void EmailTest::destroy()
 {
     delete email;
 }
 
-void EmailTest::testarCenarioSucesso()
+void EmailTest::test_validation()
 {
     cout << "Espera-se que aceite a entrada" << endl;
     try
@@ -36,7 +36,7 @@ void EmailTest::testarCenarioSucesso()
     cout << "\n================================\n";
 }
 
-void EmailTest::testarCenarioFalha()
+void EmailTest::test_invalidation()
 {
     cout << "Espera-se que rejeite a entrada" << endl;
     try
@@ -58,9 +58,9 @@ void EmailTest::testarCenarioFalha()
 }
 int EmailTest::run()
 {
-    setUp();
-    testarCenarioSucesso();
-    testarCenarioFalha();
-    tearDown();
+    create();
+    test_validation();
+    test_invalidation();
+    destroy();
     return estado;
 }

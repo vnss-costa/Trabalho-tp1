@@ -12,10 +12,10 @@ private:
   const static int VALOR_INVALIDO = 20;
   Grade *grade;
   int estado;
-  void setUp();
-  void tearDown();
-  void testarCenarioSucesso();
-  void testarCenarioFalha();
+  void create();
+  void destroy();
+  void test_validation();
+  void test_invalidation();
 
 public:
   const static int SUCESSO = 0;

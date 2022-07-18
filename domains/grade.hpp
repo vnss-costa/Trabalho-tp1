@@ -17,7 +17,7 @@ private:
     static const int MIN = 0;
     static const int MAX = 10;
     int grade;
-    void validar(int) const;
+    void isValid(int) const;
 
 public:
     Grade(int);

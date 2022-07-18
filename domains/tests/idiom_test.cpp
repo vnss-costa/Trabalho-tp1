@@ -3,18 +3,18 @@
 #include "idiom_test.hpp"
 using namespace std;
 
-void IdiomTest::setUp()
+void IdiomTest::create()
 {
     idioma = new Idioma("Ingles");
     estado = SUCESSO;
 }
 
-void IdiomTest::tearDown()
+void IdiomTest::destroy()
 {
     delete idioma;
 }
 
-void IdiomTest::testarCenarioSucesso()
+void IdiomTest::test_validation()
 {
     cout << "Espera-se que aceite a entrada" << endl;
     try
@@ -36,7 +36,7 @@ void IdiomTest::testarCenarioSucesso()
     cout << "\n================================\n";
 }
 
-void IdiomTest::testarCenarioFalha()
+void IdiomTest::test_invalidation()
 {
     cout << "Espera-se que rejeite a entrada" << endl;
     try
@@ -58,9 +58,9 @@ void IdiomTest::testarCenarioFalha()
 }
 int IdiomTest::run()
 {
-    setUp();
-    testarCenarioSucesso();
-    testarCenarioFalha();
-    tearDown();
+    create();
+    test_validation();
+    test_invalidation();
+    destroy();
     return estado;
 }

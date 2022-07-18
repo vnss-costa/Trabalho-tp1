@@ -11,18 +11,18 @@ using namespace std;
 
 // Muda o valor "Nota(valor)" para testar nota
 
-void GradeTest::setUp()
+void GradeTest::create()
 {
   grade = new Grade(0);
   estado = SUCESSO;
 }
 
-void GradeTest::tearDown()
+void GradeTest::destroy()
 {
   delete grade;
 }
 
-void GradeTest::testarCenarioSucesso()
+void GradeTest::test_validation()
 {
   cout << "Espera-se que aceite a entrada" << endl;
   try
@@ -44,7 +44,7 @@ void GradeTest::testarCenarioSucesso()
   cout << "\n================================\n";
 }
 
-void GradeTest::testarCenarioFalha()
+void GradeTest::test_invalidation()
 {
   cout << "Espera-se que rejeite a entrada" << endl;
   try
@@ -66,9 +66,9 @@ void GradeTest::testarCenarioFalha()
 }
 int GradeTest::run()
 {
-  setUp();
-  testarCenarioSucesso();
-  testarCenarioFalha();
-  tearDown();
+  create();
+  test_validation();
+  test_invalidation();
+  destroy();
   return estado;
 }

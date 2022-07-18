@@ -16,7 +16,7 @@ class Email
 private:
     const string CARACTERES_ESPECIAIS_REGEX = "(\\w+)(\\.|_)?(\\w*)@(\\w+)(\\.(\\w+))+";
     string email;
-    void validar(string) const;
+    void isValid(string) const;
 
 public:
     Email(string);

@@ -18,10 +18,10 @@ private:
     const string VALOR_INVALIDO = "12345678907";
     Code *code;
     int estado;
-    void setUp();
-    void tearDown();
-    void testarCenarioSucesso();
-    void testarCenarioFalha();
+    void create();
+    void destroy();
+    void test_validation();
+    void test_invalidation();
 
 public:
     const static int SUCESSO = 0;

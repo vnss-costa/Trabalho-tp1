@@ -1,17 +1,17 @@
 #include "code_test.hpp"
 
-void CodeTest::setUp()
+void CodeTest::create()
 {
     code = new Code("12345678907");
     estado = SUCESSO;
 }
 
-void CodeTest::tearDown()
+void CodeTest::destroy()
 {
     delete code;
 }
 
-void CodeTest::testarCenarioSucesso()
+void CodeTest::test_validation()
 {
     try
     {
@@ -25,7 +25,7 @@ void CodeTest::testarCenarioSucesso()
     }
 }
 
-void CodeTest::testarCenarioFalha()
+void CodeTest::test_invalidation()
 {
     try
     {
@@ -41,9 +41,9 @@ void CodeTest::testarCenarioFalha()
 
 int CodeTest::run()
 {
-    setUp();
-    testarCenarioSucesso();
-    testarCenarioFalha();
-    tearDown();
+    create();
+    test_validation();
+    test_invalidation();
+    destroy();
     return estado;
 }

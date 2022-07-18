@@ -1,7 +1,7 @@
 #include "idiom.hpp"
 
 //percore uma string com 10 itens, para conferir se eh igual
-void Idioma::validar(string idioma) const{
+void Idioma::isValid(string idioma) const{
     for(int i = 0;i < 10;i++)
         if (IDIOMAS_VALIDOS[i] == idioma)
             return;
@@ -9,12 +9,12 @@ void Idioma::validar(string idioma) const{
 }
 
 Idioma::Idioma(string idioma){
-    validar(idioma);
+    isValid(idioma);
     this->idioma = idioma;
 }
 
 void Idioma::setIdioma(string idioma){
-    validar(idioma);
+    isValid(idioma);
     this->idioma = idioma;
 }
 

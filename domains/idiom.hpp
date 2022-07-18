@@ -16,7 +16,7 @@ class Idioma
 private:
     const string IDIOMAS_VALIDOS[10] = {"Ingles", "Chines Mandarim", "Hindi", "Espanhol", "Frances", "Arabe", "Bengali", "Russo", "Portugues", "Indonesio"};
     string idioma;
-    void validar(string) const;
+    void isValid(string) const;
 
 public:
     Idioma(string);

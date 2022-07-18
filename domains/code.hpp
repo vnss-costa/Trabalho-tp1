@@ -16,7 +16,7 @@ private:
     static const int CODE_SIZE = 11;
     static const int VERIFYING_DIGIT_POSITION = 10; // usa o posicionamento do ultimo digito
     string code;
-    void validar(string) const;
+    void isValid(string) const;
 
 public:
     /**

@@ -1,7 +1,7 @@
 #include "grade.hpp"
 
 // Valida a nota entre 0 e 10
-void Grade::validar(int grade) const
+void Grade::isValid(int grade) const
 {
     if (grade < MIN || grade > MAX)
         throw invalid_argument("Argumento invalido.");
@@ -9,12 +9,12 @@ void Grade::validar(int grade) const
 
 Grade::Grade(int grade)
 {
-    validar(grade);
+    isValid(grade);
     this->grade = grade;
 }
 
 void Grade::setGrade(int grade)
 {
-    validar(grade);
+    isValid(grade);
     this->grade = grade;
 }

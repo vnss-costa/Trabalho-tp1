@@ -1,7 +1,7 @@
 #include "code.hpp"
 #include <string>
 
-void Code::validar(string code) const
+void Code::isValid(string code) const
 {
     if (code.length() != CODE_SIZE)
         throw invalid_argument("Tamanho Incorreto");
@@ -24,12 +24,12 @@ void Code::validar(string code) const
 
 Code::Code(string code)
 {
-    validar(code);
+    isValid(code);
     this->code = code;
 }
 
 void Code::setCode(string code)
 {
-    validar(code);
+    isValid(code);
     this->code = code;
 }
