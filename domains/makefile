@@ -1,4 +1,4 @@
-all: country.o date.o description.o password.o city.o code.o email.o idiom.o name.o
+all: country.o date.o description.o password.o city.o code.o email.o idiom.o name.o grade.o
 	+$(MAKE) -C tests
 
 country.o: country.cpp country.hpp

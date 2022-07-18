@@ -5,23 +5,23 @@
 
 using namespace std;
 
-class Nota
+class Grade
 {
 private:
     static const int MIN = 0;
     static const int MAX = 10;
-    int nota;
+    int grade;
     void validar(int) const;
 
 public:
-    Nota(int);
-    void setNota(int);
-    int getNota() const;
+    Grade(int);
+    void setGrade(int);
+    int getGrade() const;
 };
 
-inline int Nota::getNota() const
+inline int Grade::getGrade() const
 {
-    return nota;
+    return grade;
 }
 
 #endif // DOMAINS_GRADE_HPP_

@@ -65,6 +65,13 @@ int main()
     //     return Main::failure;
     // }
 
+    GradeTest grade = GradeTest();
+    if (grade.run() == Main::failure)
+    {
+        cout << "Erro no teste de nota" << endl;
+        return Main::failure;
+    }
+
     cout << endl
          << endl
          << "\033[1;32m Testes finalizados \033[0m\n"

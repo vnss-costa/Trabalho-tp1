@@ -1,17 +1,20 @@
 #include "grade.hpp"
 
-//Valida a nota entre 0 e 10
-void Nota::validar(int nota) const{
-    if (nota < MIN || nota > MAX)
+// Valida a nota entre 0 e 10
+void Grade::validar(int grade) const
+{
+    if (grade < MIN || grade > MAX)
         throw invalid_argument("Argumento invalido.");
 }
 
-Nota::Nota(int nota){
-    validar(nota);
-    this->nota = nota;
+Grade::Grade(int grade)
+{
+    validar(grade);
+    this->grade = grade;
 }
 
-void Nota::setNota(int nota){
-    validar(nota);
-    this->nota = nota;
+void Grade::setGrade(int grade)
+{
+    validar(grade);
+    this->grade = grade;
 }

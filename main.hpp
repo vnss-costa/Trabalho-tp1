@@ -9,6 +9,7 @@
 #include "./domains/tests/email_test.hpp"
 #include "./domains/tests/name_test.hpp"
 #include "./domains/tests/idiom_test.hpp"
+#include "./domains/tests/grade_test.hpp"
 
 /**
  * @brief Classe principal para conexão dos arquivos
