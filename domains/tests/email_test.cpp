@@ -6,7 +6,7 @@ using namespace std;
 void EmailTest::create()
 {
     email = new Email("pedrovilarins077@gmail.com");
-    estado = SUCESSO;
+    estado = success;
 }
 
 void EmailTest::destroy()
@@ -23,7 +23,7 @@ void EmailTest::test_validation()
              << endl;
         email->setEmail(VALOR_VALIDO);
         if (email->getEmail() != VALOR_VALIDO)
-            estado = FALHA;
+            estado = failure;
         else
             cout << "Email aceito!" << endl;
     }
@@ -31,7 +31,7 @@ void EmailTest::test_validation()
     {
         cout << "Email rejeitado!" << endl;
         cout << "Mensagem de erro: " << message.what() << endl;
-        estado = FALHA;
+        estado = failure;
     }
     cout << "\n================================\n";
 }
@@ -45,14 +45,14 @@ void EmailTest::test_invalidation()
              << endl;
         email->setEmail(VALOR_INVALIDO);
         cout << "Email aceito! (Inesperado)" << endl;
-        estado = FALHA;
+        estado = failure;
     }
     catch (invalid_argument &message)
     {
         cout << "Email rejeitado!" << endl;
         cout << "Erro: " << message.what() << endl;
         if (email->getEmail() == VALOR_INVALIDO)
-            estado = FALHA;
+            estado = failure;
     }
     cout << "\n================================\n";
 }

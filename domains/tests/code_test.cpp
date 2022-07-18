@@ -3,7 +3,7 @@
 void CodeTest::create()
 {
     code = new Code("12345678907");
-    estado = SUCESSO;
+    estado = success;
 }
 
 void CodeTest::destroy()
@@ -17,11 +17,11 @@ void CodeTest::test_validation()
     {
         code->setCode(VALOR_VALIDO);
         if (code->getCode() != VALOR_VALIDO)
-            estado = FALHA;
+            estado = failure;
     }
     catch (invalid_argument &excecao)
     {
-        estado = FALHA;
+        estado = failure;
     }
 }
 
@@ -30,12 +30,12 @@ void CodeTest::test_invalidation()
     try
     {
         code->setCode(VALOR_INVALIDO);
-        estado = FALHA;
+        estado = failure;
     }
     catch (invalid_argument &excecao)
     {
         if (code->getCode() == VALOR_INVALIDO)
-            estado = FALHA;
+            estado = failure;
     }
 }
 

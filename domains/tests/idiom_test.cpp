@@ -6,7 +6,7 @@ using namespace std;
 void IdiomTest::create()
 {
     idioma = new Idioma("Ingles");
-    estado = SUCESSO;
+    estado = success;
 }
 
 void IdiomTest::destroy()
@@ -23,7 +23,7 @@ void IdiomTest::test_validation()
              << endl;
         idioma->setIdioma(VALOR_VALIDO);
         if (idioma->getIdioma() != VALOR_VALIDO)
-            estado = FALHA;
+            estado = failure;
         else
             cout << "Idioma aceito!" << endl;
     }
@@ -31,7 +31,7 @@ void IdiomTest::test_validation()
     {
         cout << "Idioma rejeitado!" << endl;
         cout << "Mensagem de erro: " << message.what() << endl;
-        estado = FALHA;
+        estado = failure;
     }
     cout << "\n================================\n";
 }
@@ -45,14 +45,14 @@ void IdiomTest::test_invalidation()
              << endl;
         idioma->setIdioma(VALOR_INVALIDO);
         cout << "Idioma aceito! (Inesperado)" << endl;
-        estado = FALHA;
+        estado = failure;
     }
     catch (invalid_argument &message)
     {
         cout << "Idioma rejeitado!" << endl;
         cout << "Erro: " << message.what() << endl;
         if (idioma->getIdioma() == VALOR_INVALIDO)
-            estado = FALHA;
+            estado = failure;
     }
     cout << "\n================================\n";
 }

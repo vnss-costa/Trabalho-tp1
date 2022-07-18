@@ -14,7 +14,7 @@ using namespace std;
 void GradeTest::create()
 {
   grade = new Grade(0);
-  estado = SUCESSO;
+  estado = success;
 }
 
 void GradeTest::destroy()
@@ -31,7 +31,7 @@ void GradeTest::test_validation()
          << endl;
     grade->setGrade(VALOR_VALIDO);
     if (grade->getGrade() != VALOR_VALIDO)
-      estado = FALHA;
+      estado = failure;
     else
       cout << "Nota aceita!" << endl;
   }
@@ -39,7 +39,7 @@ void GradeTest::test_validation()
   {
     cout << "Nota rejeitada!" << endl;
     cout << "Mensagem de erro: " << message.what() << endl;
-    estado = FALHA;
+    estado = failure;
   }
   cout << "\n================================\n";
 }
@@ -53,14 +53,14 @@ void GradeTest::test_invalidation()
          << endl;
     grade->setGrade(VALOR_INVALIDO);
     cout << "Nota aceita! (Inesperado)" << endl;
-    estado = FALHA;
+    estado = failure;
   }
   catch (invalid_argument &message)
   {
     cout << "Nota rejeitada!" << endl;
     cout << "Erro: " << message.what() << endl;
     if (grade->getGrade() == VALOR_INVALIDO)
-      estado = FALHA;
+      estado = failure;
   }
   cout << "\n================================\n";
 }
