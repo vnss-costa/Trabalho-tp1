@@ -5,12 +5,18 @@
 
 using namespace std;
 
+/**
+ * @brief Classe que testa o domínio "code"
+ *
+ * @author Pedro Henrique Da Costa Vilarins - 180114441
+ */
+
 class CodeTest
 {
 private:
     const string VALOR_VALIDO = "12345678905";
     const string VALOR_INVALIDO = "12345678907";
-    Codigo *codigo;
+    Code *code;
     int estado;
     void setUp();
     void tearDown();

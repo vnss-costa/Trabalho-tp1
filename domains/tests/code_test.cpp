@@ -2,21 +2,21 @@
 
 void CodeTest::setUp()
 {
-    codigo = new Codigo("12345678907");
+    code = new Code("12345678907");
     estado = SUCESSO;
 }
 
 void CodeTest::tearDown()
 {
-    delete codigo;
+    delete code;
 }
 
 void CodeTest::testarCenarioSucesso()
 {
     try
     {
-        codigo->setCodigo(VALOR_VALIDO);
-        if (codigo->getCodigo() != VALOR_VALIDO)
+        code->setCode(VALOR_VALIDO);
+        if (code->getCode() != VALOR_VALIDO)
             estado = FALHA;
     }
     catch (invalid_argument &excecao)
@@ -29,12 +29,12 @@ void CodeTest::testarCenarioFalha()
 {
     try
     {
-        codigo->setCodigo(VALOR_INVALIDO);
+        code->setCode(VALOR_INVALIDO);
         estado = FALHA;
     }
     catch (invalid_argument &excecao)
     {
-        if (codigo->getCodigo() == VALOR_INVALIDO)
+        if (code->getCode() == VALOR_INVALIDO)
             estado = FALHA;
     }
 }
