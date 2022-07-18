@@ -27,18 +27,18 @@ void Date::isValid(string date)
     if (size != 6)
         throw invalid_argument("A data deve seguir o formato DD/Mes (as 3 primeiras letras do mes)");
 
-    for (int i = 0; i < 2; i++)
+    for (int i = 0; i < 2; i++){
         if (!isdigit(date[i]))
             throw invalid_argument("Os dias na data devem ser números");
         if (numDay < 1 || numDay > 31)
            throw invalid_argument("O dia deve ser um número entre 1 e 31");
-
-    for (int i = 0; i < monthSize; i++)
+    }
+    for (int i = 0; i < monthSize; i++){
         if (islower(month[0]) || isupper(month[1]) || isupper(month[2]))
             throw invalid_argument("Verifique se seu mês nâo segue o formato 'Mes' com 3 letras e apenas a primeira maiúscula");
         else if (isupper(month[i]) && !(month[i] == month[0]))
             throw invalid_argument("As outras letras se não as primeiras devem ser minúsculas");
-
+    }
 
     if (month == "Fev" || month == "Abr" || month == "Jun" || month == "Set" || month == "Nov" )
         if (numDay == 31)
