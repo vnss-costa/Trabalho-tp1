@@ -1,11 +1,12 @@
-#ifndef TESTES_H_INCLUDED
-#define TESTES_H_INCLUDED
+#ifndef DOMAINS_TESTS_EMAIL_TEST_HPP_
+#define DOMAINS_TESTS_EMAIL_TEST_HPP_
 
 #include "../email.hpp"
 
 using namespace std;
 
-class TUEmail {
+class EmailTest
+{
 private:
     const string VALOR_VALIDO = "pedrovilarins077@gmail.com";
     const string VALOR_INVALIDO = "pedrovilarins0777gmail.com";
@@ -15,10 +16,11 @@ private:
     void tearDown();
     void testarCenarioSucesso();
     void testarCenarioFalha();
+
 public:
-    const static int SUCESSO =  0;
-    const static int FALHA   = -1;
+    const static int SUCESSO = 0;
+    const static int FALHA = -1;
     int run();
 };
 
-#endif // TESTES_H_INCLUDED
+#endif //  DOMAINS_TESTS_EMAIL_TEST_HPP_

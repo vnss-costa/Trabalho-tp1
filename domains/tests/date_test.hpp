@@ -1,3 +1,6 @@
+#ifndef DOMAINS_TESTS_DATE_TEST_HPP_
+#define DOMAINS_TESTS_DATE_TEST_HPP_
+
 #include <string>
 #include "../../domains/date.hpp"
 using namespace std;
@@ -25,3 +28,5 @@ private:
 public:
     int run();
 };
+
+#endif // DOMAINS_TESTS_DATE_TEST_HPP_

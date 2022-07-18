@@ -1,3 +1,6 @@
+#ifndef DOMAINS_TESTS_COUNTRY_TEST_HPP_
+#define DOMAINS_TESTS_COUNTRY_TEST_HPP_
+
 #include <string>
 #include "../../domains/country.hpp"
 using namespace std;
@@ -25,3 +28,5 @@ private:
 public:
     int run();
 };
+
+#endif // DOMAINS_TESTS_COUNTRY_TEST_HPP_

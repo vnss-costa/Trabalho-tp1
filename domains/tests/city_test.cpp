@@ -34,12 +34,14 @@ void CityTest::test_validation(string city)
     {
         cout << "Cidade testada: " << city << endl;
         this->city->setCity(city);
-        cout << "Cidade válida!" << endl << endl;
+        cout << "Cidade válida!" << endl
+             << endl;
     }
     catch (invalid_argument &message)
     {
         cout << "Cidade inválida" << endl;
-        cout << "Mensagem de erro: " << message.what() << endl << endl;
+        cout << "Mensagem de erro: " << message.what() << endl
+             << endl;
         result = failure;
     }
 }

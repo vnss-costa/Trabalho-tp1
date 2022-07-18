@@ -1,11 +1,12 @@
-#ifndef TESTES_H_INCLUDED
-#define TESTES_H_INCLUDED
+#ifndef DOMAINS_TESTS_NAME_TEST_HPP_
+#define DOMAINS_TESTS_NAME_TEST_HPP_
 
 #include "../name.hpp"
 
 using namespace std;
 
-class TUNome {
+class NameTest
+{
 private:
     const string VALOR_VALIDO = "Pedro Henrique Da Costa Vilari";
     const string VALOR_INVALIDO = "pedro Henrique Da Costa Vilari";
@@ -15,11 +16,11 @@ private:
     void tearDown();
     void testarCenarioSucesso();
     void testarCenarioFalha();
+
 public:
-    const static int SUCESSO =  0;
-    const static int FALHA   = -1;
+    const static int SUCESSO = 0;
+    const static int FALHA = -1;
     int run();
 };
 
-#endif // TESTES_H_INCLUDED
-
+#endif // DOMAINS_TESTS_NAME_TEST_HPP_

@@ -3,7 +3,8 @@
 #include "description_test.hpp"
 using namespace std;
 
-int DescriptionTest::run() {
+int DescriptionTest::run()
+{
     create();
 
     test_validation("Descrição válida");
@@ -16,23 +17,29 @@ int DescriptionTest::run() {
     return result;
 }
 
-void DescriptionTest::create() {
+void DescriptionTest::create()
+{
     description = new Description("abacate teste");
     result = success;
 }
 
-void DescriptionTest::destroy() {
+void DescriptionTest::destroy()
+{
     delete description;
 }
 
-void DescriptionTest::test_validation(string description) {
+void DescriptionTest::test_validation(string description)
+{
     cout << "Espera-se que aceite a entrada" << endl;
-    try {
+    try
+    {
         cout << "Descrição testada: " << description << endl
              << endl;
         this->description->setDescription(description);
         cout << "Descrição aceita!" << endl;
-    } catch (invalid_argument &message) {
+    }
+    catch (invalid_argument &message)
+    {
         cout << "Descrição rejeitada!" << endl;
         cout << "Mensagem de erro: " << message.what() << endl;
         result = failure;
@@ -40,16 +47,19 @@ void DescriptionTest::test_validation(string description) {
     cout << "\n================================\n";
 }
 
-void DescriptionTest::test_invalidation(string description) {
+void DescriptionTest::test_invalidation(string description)
+{
     cout << "Espera-se que rejeite a entrada" << endl;
-    try {
+    try
+    {
         cout << "Descrição testada: " << description << endl
              << endl;
         this->description->setDescription(description);
         cout << "Descrição aceita!" << endl;
         result = failure;
     }
-    catch (invalid_argument &message) {
+    catch (invalid_argument &message)
+    {
         cout << "Descrição rejeitada!" << endl;
         cout << "Erro: " << message.what() << endl;
     }

@@ -10,21 +10,21 @@ using namespace std;
  *
  */
 
- class CityTest
- {
-     private:
-        inline static const int success = 0;
-        inline static const int failure = 1;
+class CityTest
+{
+private:
+   inline static const int success = 0;
+   inline static const int failure = 1;
 
-        int result;
+   int result;
 
-        City *city;
+   City *city;
 
-        void destroy();
-        void create();
-        void test_validation(string city);
-        void test_invalidation(string city);
-     
-     public:
-        int run();
- };
+   void destroy();
+   void create();
+   void test_validation(string city);
+   void test_invalidation(string city);
+
+public:
+   int run();
+};

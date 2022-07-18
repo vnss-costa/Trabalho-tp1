@@ -37,6 +37,34 @@ int main()
         return Main::failure;
     }
 
+    EmailTest email = EmailTest();
+    if (email.run() == Main::failure)
+    {
+        cout << "Erro no teste de email" << endl;
+        return Main::failure;
+    }
+
+    // NameTest name = NameTest();
+    // if (name.run() == Main::failure)
+    // {
+    //     cout << "Erro no teste de nome" << endl;
+    //     return Main::failure;
+    // }
+
+    IdiomTest idiom = IdiomTest();
+    if (idiom.run() == Main::failure)
+    {
+        cout << "Erro no teste de idioma" << endl;
+        return Main::failure;
+    }
+
+    // CodeTest code = CodeTest();
+    // if (code.run() == Main::failure)
+    // {
+    //     cout << "Erro no teste de código" << endl;
+    //     return Main::failure;
+    // }
+
     cout << endl
          << endl
          << "\033[1;32m Testes finalizados \033[0m\n"

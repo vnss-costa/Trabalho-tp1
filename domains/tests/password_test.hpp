@@ -10,7 +10,8 @@ using namespace std;
  *
  * @author Fernando Jorge - 200017829
  */
-class PasswordTest {
+class PasswordTest
+{
 private:
     inline static const int success = 0;
     inline static const int failure = 1;
@@ -28,4 +29,4 @@ public:
     int run();
 };
 
-#endif  //  DOMAINS_TESTS_PASSWORD_TEST_HPP_
+#endif //  DOMAINS_TESTS_PASSWORD_TEST_HPP_

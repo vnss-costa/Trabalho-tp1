@@ -1,11 +1,11 @@
-#ifndef TESTES_H_INCLUDED
-#define TESTES_H_INCLUDED
+#ifndef DOMAINS_TESTS_CODE_TEST_HPP_
+#define DOMAINS_TESTS_CODE_TEST_HPP_
 
 #include "../code.hpp"
 
 using namespace std;
 
-class TUCodigo
+class CodeTest
 {
 private:
     const string VALOR_VALIDO = "12345678905";
@@ -23,4 +23,4 @@ public:
     int run();
 };
 
-#endif // TESTES_H_INCLUDED
+#endif // DOMAINS_TESTS_CODE_TEST_HPP_
