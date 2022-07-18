@@ -9,7 +9,7 @@ Requisitos:
 - make
 - Doxygen
 
-## Como rodar o projeto:
+## Como rodar o projeto no vscode (utilizado para colaborar no desenvolvimento) :
 
 Deve ser observado o makefile criado, tendo as possibilidades de utilizar os comandos:
 
