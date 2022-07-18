@@ -5,6 +5,12 @@
 
 using namespace std;
 
+/**
+ * @brief Classe para o domínio Nota
+ *
+ * @author Pedro Henrique Da Costa Vilarins - 180114441
+ */
+
 class Grade
 {
 private:

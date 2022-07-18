@@ -5,6 +5,12 @@
 
 using namespace std;
 
+/**
+ * @brief Classe para o domínio Email
+ *
+ * @author Pedro Henrique Da Costa Vilarins - 180114441
+ */
+
 class Email
 {
 private:
