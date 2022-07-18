@@ -5,12 +5,17 @@
 
 using namespace std;
 
+/**
+ * @brief Classe que testa o domínio "idiom"
+ *
+ * @author Pedro Henrique Da Costa Vilarins - 180114441
+ */
 class IdiomTest
 {
 private:
     const string VALOR_VALIDO = "Ingles";
     const string VALOR_INVALIDO = "Japones";
-    Idioma *idioma;
+    Idiom *idiom;
     int estado;
     void create();
     void destroy();

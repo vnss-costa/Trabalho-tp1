@@ -8,53 +8,44 @@ using namespace std;
  *
  * @author Pedro Henrique Da Costa Vilarins - 180114441
  */
+
 class Name
 {
 private:
     string name;
 
     void isValid(string name);
+
 public:
     /**
-     * @brief Método construtor do nome
-     */
-    Name();
-
-    /**
-     * @brief Construtor que seleciona o nome informado
+     * @brief Construtor que seleciona o nome informada
      *
-     * @param name é o nome escolhido
-     * @throw invalid_argument caso não seja um nome válido
+     * @param name é o nome que se deseja inserir
+     * @throw invalid_argument caso não seja um nome válida
      */
     Name(string name);
 
     /**
-     * @brief Retorna qual o nome armazenado no objeto
-     *
-     * @return string com o nome
-     */
-    string getName();
-
-    /**
-     * @brief Configura o nome para o inserido
+     * @brief Configura o nome para o valor inserido
      *
      * @param name com o nome a ser inserido
      * @throw invalid_agument caso o valor seja inválido
      */
+
     void setName(string name);
+
+    /**
+     * @brief Retorna qual o nome armazenada no objeto
+     *
+     * @return string com o nome
+     */
+    string getName() const;
 };
 
-inline string Name::getName()
+inline string Name::getName() const
 {
     return name;
 }
 
-inline void Name::setName(string name)
-{
-    isValid(name);
-    this->name = name;
-}
-
-inline Name::Name() {};
 
 #endif // DOMAINS_NAME_HPP_

@@ -5,6 +5,11 @@
 
 using namespace std;
 
+/**
+ * @brief Classe que testa o domínio "code"
+ *
+ * @author Pedro Henrique Da Costa Vilarins - 180114441
+ */
 class EmailTest
 {
 private:
