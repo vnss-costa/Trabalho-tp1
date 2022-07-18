@@ -7,13 +7,13 @@ using namespace std;
 
 /**
  * @brief Classe do domínio Cidade
- * 
+ *
  * @author Vanessa Paixão - 200028286
  */
 
  class City {
      private:
-        inline static const string cities[20] = 
+        inline static const string cities[20] =
         {
             "Antalya",
             "Bangkok",
@@ -45,7 +45,7 @@ using namespace std;
 
         string getCity();
 
-        void setCity(string city); 
+        void setCity(string city);
  };
 
  inline string City::getCity()

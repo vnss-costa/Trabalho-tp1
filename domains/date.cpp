@@ -13,7 +13,7 @@ void Date::isValid(string date)
 {
     string value = date;
     int position = date.find("/");
-    
+
     string strDay = date.substr(0, 2);
     int numDay = stoi(strDay);
     string month = date.substr(position + 1, -1);
@@ -43,7 +43,7 @@ void Date::isValid(string date)
     if (month == "Fev" || month == "Abr" || month == "Jun" || month == "Set" || month == "Nov" )
         if (numDay == 31)
             throw invalid_argument("O mês informado não tem 31 dias");
- 
+
     for (int i = 0; i < 12; i++)
         if (dates[i] == month)
             return;

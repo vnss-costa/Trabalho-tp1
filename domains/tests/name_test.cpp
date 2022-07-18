@@ -3,22 +3,16 @@
 #include "name_test.hpp"
 using namespace std;
 
-int NameTest::run()
-{
-    create();
-
-    test_validation();
-    test_invalidation();
-
-    destroy();
-
-    return result;
-}
+/**
+ * @brief implementa��o do teste de unidade da classe name
+ *
+ * @author Pedro Henrique Da Costa Vilarins - 180114441
+ */
 
 void NameTest::create()
 {
-    name = new Name("Pedro");
-    result = success;
+    name = new Name("Pedro Henrique Da Costa Vilari");
+    estado = SUCESSO;
 }
 
 void NameTest::destroy()
@@ -28,38 +22,37 @@ void NameTest::destroy()
 
 void NameTest::test_validation()
 {
-    cout << "Espera-se que aceite a entrada" << endl;
     try
     {
-        cout << "Nome testado: " << VALOR_VALIDO << endl
-             << endl;
-        this->name->setName(VALOR_VALIDO);
-        cout << "Nome aceito!" << endl;
+        name->setName(VALOR_VALIDO);
+        if (name->getName() != VALOR_VALIDO)
+            estado = FALHA;
     }
-    catch (invalid_argument &message)
+    catch (invalid_argument &excecao)
     {
-        cout << "Nome rejeitado!" << endl;
-        cout << "Mensagem de erro: " << message.what() << endl;
-        result = failure;
+        estado = FALHA;
     }
-    cout << "\n================================\n";
 }
 
 void NameTest::test_invalidation()
 {
-    cout << "Espera-se que rejeite a entrada" << endl;
     try
     {
-        cout << "Nome testado: " << VALOR_INVALIDO << endl
-             << endl;
-        this->name->setName(VALOR_INVALIDO);
-        cout << "Nome aceito! (Inesperado)" << endl;
-        result = failure;
+        name->setName(VALOR_INVALIDO);
+        estado = FALHA;
     }
-    catch (invalid_argument &message)
+    catch (invalid_argument &excecao)
     {
-        cout << "Nome rejeitado!" << endl;
-        cout << "Erro: " << message.what() << endl;
+        if (name->getName() == VALOR_INVALIDO)
+            estado = FALHA;
     }
-    cout << "\n================================\n";
+}
+
+int NameTest::run()
+{
+    create();
+    test_validation();
+    test_invalidation();
+    destroy();
+    return estado;
 }

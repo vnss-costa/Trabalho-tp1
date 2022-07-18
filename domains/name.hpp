@@ -14,7 +14,7 @@ class Name
 private:
     string name;
 
-    void isValid(string name);
+    void isValid(string name) const;
 
 public:
     /**
@@ -46,6 +46,5 @@ inline string Name::getName() const
 {
     return name;
 }
-
 
 #endif // DOMAINS_NAME_HPP_

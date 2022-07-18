@@ -3,44 +3,43 @@
 #include <iostream>
 using namespace std;
 
+/**
+ * @brief implementa��o da classe name
+ *
+ * @author Pedro Henrique Da Costa Vilarins - 180114441
+ */
+
+void Name::isValid(string name) const
+{
+    int tamanho_name = name.length();
+
+    if (tamanho_name > 30)
+        throw invalid_argument("Tamanho Invalido"); // confere tamanho
+
+    for (int i; i < tamanho_name; i++)
+    {
+        if (isupper(name[0]) != true) // confere se a primeira letra do name eh maiuscula
+            throw invalid_argument("Primeiro nome deve comecar com letra maiuscula");
+
+        if ((isspace(name[i]) && isspace(name[i + 1])) == true) // confere espaco duplo
+            throw invalid_argument("Nao pode haver dois espacos");
+
+        if (isspace(name[i]) && isupper(name[i + 1]) != true) // confere se o sobrename eh maiusculo
+            throw invalid_argument("Sobrename deve comecar com letra maiuscula");
+
+        if ((isalpha(name[i]) || isspace(name[i])) != true) // confere se tem entrada diferente de aspaco e letra
+            throw invalid_argument("Entrada so pode conter epaco ou letra");
+    }
+}
+
 Name::Name(string name)
 {
     isValid(name);
-    setName(name);
+    this->name = name;
 }
 
-void Name::isValid(string name)
+void Name::setName(string name)
 {
-    string value = name;
-    int position = name.find(" ");
-    int size = value.size();
-    bool hasLower = false, hasUpper = false;
-
-    if (size > 30)
-        throw invalid_argument("O nome deve ter no máximo 30 letras");
-
-    for (int i = 0; i < size; i++)
-
-        if (islower(name[i]))
-        {
-            hasLower = true;
-            if (i - 1 == position || i == 0)
-                throw invalid_argument("Seu primeiro nome e sobrenomes devem ter primeira letra maiúscula");
-        }
-
-        else if (isupper(name[i]))
-        {
-            hasUpper = true;
-            if (!islower(name[i + 1]))
-                throw invalid_argument("As outras letras se não as primeiras devem ser minúsculas");
-        }
-        else if (name[i] == ' ' && name[i + 1] == ' ')
-            throw invalid_argument("Seu nome não pode ter 2 ou mais espaços seguidos");
-
-    if (hasLower == false)
-        throw invalid_argument("Seu nome deve conter pelo menos 1 letra minúscula");
-    if (hasUpper == false)
-        throw invalid_argument("Seu nome deve conter pelo menos 1 letra maiúscula");
-
-    return;
+    isValid(name);
+    this->name = name;
 }
