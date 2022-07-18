@@ -6,12 +6,12 @@ using namespace std;
 int main()
 {
     CityTest city = CityTest();
-    if (country.run() == Main::failure) {
-        cout<< "Erro no teste de pais";
-        return Main::failure
+    if (city.run() == Main::failure) {
+        cout<< "\nErro no teste de cidade";
+        return Main::failure;
     }
 
-    cout<<"Testes finalizados";
+    cout<<"\nTestes finalizados";
 
     return Main::success;
 }

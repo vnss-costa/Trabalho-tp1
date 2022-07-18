@@ -1,7 +1,7 @@
 #include <iostream>
 #include <string.h>
 
-#include "domains/tests/country.hpp"
+#include "./domains/tests/city_test.hpp"
 
 class Main
 {

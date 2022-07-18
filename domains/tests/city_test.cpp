@@ -29,34 +29,34 @@ void CityTest::destroy()
 
 void CityTest::test_validation(string city)
 {
-    cout<<"Esperada uma entrada válida";
+    cout<<"\nEsperada uma entrada válida";
     try
     {
-        cout<<"Cidade testada: "<<city;
+        cout<<"\nCidade testada: "<<city;
         this->city->setCity(city);
-        cout<<"Cidade válida!";
+        cout<<"\nCidade válida!";
     }
     catch (invalid_argument &message)
     {
-        cout<<"Cidade inválida";
-        cout<<"Mensagem de erro: "<<message.what();
+        cout<<"\nCidade inválida";
+        cout<<"\nMensagem de erro: "<<message.what();
         result = failure;
     }
 }
 
 void CityTest::test_invalidation(string city)
 {
-    cout<<"Esperada uma entrada invalida";
+    cout<<"\nEsperada uma entrada invalida";
     try
     {
-        cout<<"Cidade testada: "<<city;
+        cout<<"\nCidade testada: "<<city;
         this->city->setCity(city);
-        cout<<"Cidade valida!";
+        cout<<"\nCidade valida!";
         result=failure;
     }
     catch (invalid_argument &message)
     {
-        cout<<"Ciade inválida!";
-        cout<<"Erro: "<<message.what();
+        cout<<"\nCiade inválida!";
+        cout<<"\nErro: "<<message.what();
     }
 }
