@@ -75,6 +75,12 @@
 		<Unit filename="entities/accommodation.hpp" />
 		<Unit filename="entities/review.cpp" />
 		<Unit filename="entities/review.hpp" />
+		<Unit filename="entities/tests/accommodation_test.cpp" />
+		<Unit filename="entities/tests/accommodation_test.hpp" />
+		<Unit filename="entities/tests/review_test.cpp" />
+		<Unit filename="entities/tests/review_test.hpp" />
+		<Unit filename="entities/tests/user_test.cpp" />
+		<Unit filename="entities/tests/user_test.hpp" />
 		<Unit filename="entities/user.cpp" />
 		<Unit filename="entities/user.hpp" />
 		<Unit filename="main.cpp" />
