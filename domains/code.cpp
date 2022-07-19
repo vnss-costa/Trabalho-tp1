@@ -28,9 +28,3 @@ Code::Code(string code)
     isValid(code);
     this->code = code;
 }
-
-void Code::setCode(string code)
-{
-    isValid(code);
-    this->code = code;
-}

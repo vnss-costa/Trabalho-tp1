@@ -11,6 +11,10 @@
 #include "./domains/tests/idiom_test.hpp"
 #include "./domains/tests/grade_test.hpp"
 
+#include "./entities/tests/accommodation_test.hpp"
+#include "./entities/tests/review_test.hpp"
+#include "./entities/tests/user_test.hpp"
+
 /**
  * @brief Classe principal para conexão dos arquivos
  *

@@ -7,7 +7,7 @@ using namespace std;
 Country::Country(string country)
 {
     isValid(country);
-    setName(country);
+    setCountry(country);
 }
 
 void Country::isValid(string country)

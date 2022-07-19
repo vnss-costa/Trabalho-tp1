@@ -12,9 +12,3 @@ Grade::Grade(int grade)
     isValid(grade);
     this->grade = grade;
 }
-
-void Grade::setGrade(int grade)
-{
-    isValid(grade);
-    this->grade = grade;
-}

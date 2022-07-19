@@ -1,9 +1,7 @@
 #ifndef DOMAINS_IDIOM_HPP_
 #define DOMAINS_IDIOM_HPP_
-
-#include <stdexcept>
-
 using namespace std;
+#include <stdexcept>
 
 /**
  * @brief Classe para o domínio idioma
@@ -14,11 +12,17 @@ using namespace std;
 class Idiom
 {
 private:
-    const string IDIOMAS_VALIDOS[10] = {"Ingles", "Chines Mandarim", "Hindi", "Espanhol", "Frances", "Arabe", "Bengali", "Russo", "Portugues", "Indonesio"};
+    string IDIOMAS_VALIDOS[10] = {"Ingles", "Chines Mandarim", "Hindi", "Espanhol", "Frances", "Arabe", "Bengali", "Russo", "Portugues", "Indonesio"};
     string idiom;
+
     void isValid(string) const;
 
 public:
+    /**
+     * @brief Método construtor do idioma
+     */
+    Idiom();
+
     /**
      * @brief Construtor que seleciona o idioma informada
      *
@@ -30,7 +34,7 @@ public:
     /**
      * @brief Configura o idioma para o valor inserido
      *
-     * @param idiom com o nome a ser inserido
+     * @param idiom com o idioma a ser inserido
      * @throw invalid_agument caso o valor seja inválido
      */
 
@@ -39,14 +43,22 @@ public:
     /**
      * @brief Retorna qual o idioma armazenada no objeto
      *
-     * @return string com o nome do idioma
+     * @return string com o idioma
      */
-    string getIdiom() const;
+    string getIdiom();
 };
 
-inline string Idiom::getIdiom() const
+inline string Idiom::getIdiom()
 {
     return idiom;
 }
 
-#endif // DOMAINS_CODE_HPP_
+inline void Idiom::setIdiom(string idiom)
+{
+    isValid(idiom);
+    this->idiom = idiom;
+}
+
+inline Idiom::Idiom(){};
+
+#endif // DOMAINS_IDIOM_HPP_

@@ -13,17 +13,16 @@ using namespace std;
 
 class Email
 {
-    private:
-        string email;
-        void isValid(string email);
+private:
+    string email;
+    void isValid(string email);
 
-    public:
-
+public:
     /**
-     * @brief Construtor padrão do domínio de email
+     * @brief Método construtor do email
      */
     Email();
-    
+
     /**
      * @brief Construtor que seleciona o email informada
      *
@@ -38,7 +37,6 @@ class Email
      * @param email com o nome a ser inserido
      * @throw invalid_agument caso o valor seja inválido
      */
-
     void setEmail(string email);
 
     /**
