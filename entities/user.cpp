@@ -1,6 +1,7 @@
 #include "user.hpp"
 using namespace std;
 
+User::User() {}
 
 User::User(Email email)
 {

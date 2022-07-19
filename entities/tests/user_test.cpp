@@ -142,7 +142,7 @@ void UserTest::test_validation_password_test_block(string password)
 
 void UserTest::test_invalidation_password_test_block(string password)
 {
-  cout << "Testando senha Inválida" << endl;
+  cout << "Testando senha inválida" << endl;
   try
   {
     cout << "Senha Testada: " << password << endl
@@ -155,6 +155,126 @@ void UserTest::test_invalidation_password_test_block(string password)
   catch (invalid_argument &message)
   {
     cout << "Senha rejeitada!" << endl;
+    cout << "Mensagem de erro: " << message.what() << endl;
+  }
+  cout << "\n==============================\n\n";
+}
+
+void UserTest::test_validation_idiom_test_block(string idiom)
+{
+  cout << "Testando idioma válido" << endl;
+  try
+  {
+    cout << "idioma Testado: " << idiom << endl
+         << endl;
+    user->setPassword(idiom);
+    cout << "idioma aceito!" << endl;
+    cout << "o idioma atual é: " << user->getPassword() << endl;
+  }
+  catch (invalid_argument &message)
+  {
+    cout << "idioma rejeitado!" << endl;
+    cout << "Mensagem de erro: " << message.what() << endl;
+    state = failure;
+  }
+  cout << "\n==============================\n\n";
+}
+
+void UserTest::test_invalidation_idiom_test_block(string idiom)
+{
+  cout << "Testando idioma Inválido" << endl;
+  try
+  {
+    cout << "idioma Testado: " << idiom << endl
+         << endl;
+    user->setPassword(idiom);
+    cout << "idioma aceito!" << endl;
+    cout << "o idioma atual é: " << user->getPassword() << endl;
+    state = failure;
+  }
+  catch (invalid_argument &message)
+  {
+    cout << "idioma rejeitado!" << endl;
+    cout << "Mensagem de erro: " << message.what() << endl;
+  }
+  cout << "\n==============================\n\n";
+}
+
+void UserTest::test_validation_birthday_test_block(string birthday)
+{
+  cout << "Testando data válida" << endl;
+  try
+  {
+    cout << "Aniversário Testado: " << birthday << endl
+         << endl;
+    user->setDate(birthday);
+    cout << "Aniversário aceito!" << endl;
+    cout << "O aniversário atual é: " << user->getDate() << endl;
+  }
+  catch (invalid_argument &message)
+  {
+    cout << "Aniversário rejeitado!" << endl;
+    cout << "Mensagem de erro: " << message.what() << endl;
+    state = failure;
+  }
+  cout << "\n==============================\n\n";
+}
+
+void UserTest::test_invalidation_birthday_test_block(string birthday)
+{
+  cout << "Testando data inválida" << endl;
+  try
+  {
+    cout << "Aniversário Testado: " << birthday << endl
+         << endl;
+    user->setDate(birthday);
+    cout << "Aniversário aceito!" << endl;
+    cout << "O aniversário atual é: " << user->getDate() << endl;
+    state = failure;
+  }
+  catch (invalid_argument &message)
+  {
+    cout << "Aniversário rejeitado!" << endl;
+    cout << "Mensagem de erro: " << message.what() << endl;
+  }
+  cout << "\n==============================\n\n";
+}
+
+void UserTest::test_validation_description_test_block(string description)
+{
+  cout << "Testando descrição válida" << endl;
+  try
+  {
+    cout << "Descrição Testada: " << description << endl
+         << endl;
+    user->setPassword(description);
+    cout << "Descrição aceita!" << endl;
+    cout << "A descrição atual é: " << user->getPassword() << endl;
+  }
+  catch (invalid_argument &message)
+  {
+    cout << "Descrição rejeitada!" << endl;
+    cout << "Mensagem de erro: " << message.what() << endl;
+    state = failure;
+  }
+  cout << "\n==============================\n\n";
+}
+
+void UserTest::test_invalidation_description_test_block(string description)
+{
+  cout << "Testando descrição inválida" << endl;
+  try
+  {
+    cout << "Descrição Testada: " << description << endl
+         << endl;
+    user->setPassword(description);
+    cout << "Descrição aceita!" << endl;
+    cout << "A descrição atual é: " << user->getPassword() << endl;
+    state = failure;
+  }
+  catch (invalid_argument &message)
+  {
+    cout << "Descrição rejeitada!" << endl;
     cout << "Mensagem de erro: " << message.what() << endl;
   }
   cout << "\n==============================\n\n";

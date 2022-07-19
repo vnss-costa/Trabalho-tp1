@@ -44,12 +44,20 @@ public:
      *
      * @return string com o nome
      */
-    string getName() const;
+    string getName();
 };
 
-inline string Name::getName() const
+inline string Name::getName()
 {
     return name;
 }
+
+inline void Name::setName(string name)
+{
+    isValid(name);
+    this->name = name;
+}
+
+inline Name::Name(){};
 
 #endif // DOMAINS_NAME_HPP_
