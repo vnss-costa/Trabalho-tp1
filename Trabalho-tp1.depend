@@ -1,166 +1,167 @@
 # depslib dependency file v1.0
-1658162689 source:/home/nando-sts/Documents/Trabalho-tp1/domains/city.cpp
+1658194284 source:/home/nando-sts/Documents/Trabalho-tp1/domains/city.cpp
 	"city.hpp"
 	<string>
 	<iostream>
 
-1658162710 /home/nando-sts/Documents/Trabalho-tp1/domains/city.hpp
+1658194284 /home/nando-sts/Documents/Trabalho-tp1/domains/city.hpp
 	<string>
 
-1658190440 source:/home/nando-sts/Documents/Trabalho-tp1/domains/code.cpp
+1658257976 source:/home/nando-sts/Documents/Trabalho-tp1/domains/code.cpp
 	"code.hpp"
 	<string>
 
-1658162760 /home/nando-sts/Documents/Trabalho-tp1/domains/code.hpp
+1658257976 /home/nando-sts/Documents/Trabalho-tp1/domains/code.hpp
 	<stdexcept>
 
-1658166579 source:/home/nando-sts/Documents/Trabalho-tp1/domains/country.cpp
+1658257976 source:/home/nando-sts/Documents/Trabalho-tp1/domains/country.cpp
 	"country.hpp"
 	<string>
 	<iostream>
 
-1658162799 /home/nando-sts/Documents/Trabalho-tp1/domains/country.hpp
+1658257976 /home/nando-sts/Documents/Trabalho-tp1/domains/country.hpp
 	<string>
 
-1658190205 source:/home/nando-sts/Documents/Trabalho-tp1/domains/date.cpp
+1658194284 source:/home/nando-sts/Documents/Trabalho-tp1/domains/date.cpp
 	"date.hpp"
 	<string>
 	<iostream>
 
-1658162834 /home/nando-sts/Documents/Trabalho-tp1/domains/date.hpp
+1658194284 /home/nando-sts/Documents/Trabalho-tp1/domains/date.hpp
 	<string>
 
-1658162854 source:/home/nando-sts/Documents/Trabalho-tp1/domains/description.cpp
+1658194284 source:/home/nando-sts/Documents/Trabalho-tp1/domains/description.cpp
 	"description.hpp"
 	<string>
 	<iostream>
 
-1658162873 /home/nando-sts/Documents/Trabalho-tp1/domains/description.hpp
+1658194284 /home/nando-sts/Documents/Trabalho-tp1/domains/description.hpp
 	<string>
 
-1658162897 source:/home/nando-sts/Documents/Trabalho-tp1/domains/email.cpp
+1658257972 source:/home/nando-sts/Documents/Trabalho-tp1/domains/email.cpp
+	<iostream>
+	<string>
+	<ctype.h>
 	"email.hpp"
 	<regex>
 
-1658162927 /home/nando-sts/Documents/Trabalho-tp1/domains/email.hpp
-	<stdexcept>
+1658258120 /home/nando-sts/Documents/Trabalho-tp1/domains/email.hpp
+	<iostream>
+	<string>
 
-1658162944 source:/home/nando-sts/Documents/Trabalho-tp1/domains/grade.cpp
+1658257976 source:/home/nando-sts/Documents/Trabalho-tp1/domains/grade.cpp
 	"grade.hpp"
 
-1658162960 /home/nando-sts/Documents/Trabalho-tp1/domains/grade.hpp
+1658257976 /home/nando-sts/Documents/Trabalho-tp1/domains/grade.hpp
 	<stdexcept>
 
-1658162979 source:/home/nando-sts/Documents/Trabalho-tp1/domains/idiom.cpp
+1658257976 source:/home/nando-sts/Documents/Trabalho-tp1/domains/idiom.cpp
 	"idiom.hpp"
 
-1658163002 /home/nando-sts/Documents/Trabalho-tp1/domains/idiom.hpp
+1658257976 /home/nando-sts/Documents/Trabalho-tp1/domains/idiom.hpp
 	<stdexcept>
 
-1658165851 source:/home/nando-sts/Documents/Trabalho-tp1/domains/name.cpp
+1658257976 source:/home/nando-sts/Documents/Trabalho-tp1/domains/name.cpp
 	"name.hpp"
-	<string>
-	<iostream>
 
-1658165756 /home/nando-sts/Documents/Trabalho-tp1/domains/name.hpp
-	<string>
+1658257976 /home/nando-sts/Documents/Trabalho-tp1/domains/name.hpp
+	<stdexcept>
 
-1658163045 source:/home/nando-sts/Documents/Trabalho-tp1/domains/password.cpp
+1658194284 source:/home/nando-sts/Documents/Trabalho-tp1/domains/password.cpp
 	"password.hpp"
 	<string>
 	<iostream>
 
-1658163108 /home/nando-sts/Documents/Trabalho-tp1/domains/password.hpp
+1658194284 /home/nando-sts/Documents/Trabalho-tp1/domains/password.hpp
 	<string>
 
-1658163214 source:/home/nando-sts/Documents/Trabalho-tp1/domains/tests/city_test.cpp
+1658194284 source:/home/nando-sts/Documents/Trabalho-tp1/domains/tests/city_test.cpp
 	<string>
 	<iostream>
 	"city_test.hpp"
 
-1658163268 /home/nando-sts/Documents/Trabalho-tp1/domains/tests/city_test.hpp
+1658194284 /home/nando-sts/Documents/Trabalho-tp1/domains/tests/city_test.hpp
 	<string>
 	"../city.hpp"
 
-1658176536 source:/home/nando-sts/Documents/Trabalho-tp1/domains/tests/code_test.cpp
+1658194284 source:/home/nando-sts/Documents/Trabalho-tp1/domains/tests/code_test.cpp
 	"code_test.hpp"
 
-1658176434 /home/nando-sts/Documents/Trabalho-tp1/domains/tests/code_test.hpp
+1658194284 /home/nando-sts/Documents/Trabalho-tp1/domains/tests/code_test.hpp
 	"../code.hpp"
 
-1658163355 source:/home/nando-sts/Documents/Trabalho-tp1/domains/tests/country_test.cpp
+1658257976 source:/home/nando-sts/Documents/Trabalho-tp1/domains/tests/country_test.cpp
 	<string>
 	<iostream>
 	"country_test.hpp"
 
-1658163392 /home/nando-sts/Documents/Trabalho-tp1/domains/tests/country_test.hpp
+1658260429 /home/nando-sts/Documents/Trabalho-tp1/domains/tests/country_test.hpp
 	<string>
 	"../../domains/country.hpp"
 
-1658163408 source:/home/nando-sts/Documents/Trabalho-tp1/domains/tests/date_test.cpp
+1658194284 source:/home/nando-sts/Documents/Trabalho-tp1/domains/tests/date_test.cpp
 	"date_test.hpp"
 	<string>
 	<iostream>
 
-1658163431 /home/nando-sts/Documents/Trabalho-tp1/domains/tests/date_test.hpp
+1658260429 /home/nando-sts/Documents/Trabalho-tp1/domains/tests/date_test.hpp
 	<string>
 	"../../domains/date.hpp"
 
-1658163452 source:/home/nando-sts/Documents/Trabalho-tp1/domains/tests/description_test.cpp
+1658194284 source:/home/nando-sts/Documents/Trabalho-tp1/domains/tests/description_test.cpp
 	<string>
 	<iostream>
 	"description_test.hpp"
 
-1658163471 /home/nando-sts/Documents/Trabalho-tp1/domains/tests/description_test.hpp
+1658260429 /home/nando-sts/Documents/Trabalho-tp1/domains/tests/description_test.hpp
 	<string>
 	"../../domains/description.hpp"
 
-1658164299 source:/home/nando-sts/Documents/Trabalho-tp1/domains/tests/email_test.cpp
+1658257972 source:/home/nando-sts/Documents/Trabalho-tp1/domains/tests/email_test.cpp
 	<string>
 	<iostream>
 	"email_test.hpp"
 
-1658163578 /home/nando-sts/Documents/Trabalho-tp1/domains/tests/email_test.hpp
+1658257972 /home/nando-sts/Documents/Trabalho-tp1/domains/tests/email_test.hpp
 	"../email.hpp"
 
-1658163664 source:/home/nando-sts/Documents/Trabalho-tp1/domains/tests/grade_test.cpp
+1658194284 source:/home/nando-sts/Documents/Trabalho-tp1/domains/tests/grade_test.cpp
 	<string>
 	<iostream>
 	"grade_test.hpp"
 
-1658163785 /home/nando-sts/Documents/Trabalho-tp1/domains/tests/grade_test.hpp
+1658194284 /home/nando-sts/Documents/Trabalho-tp1/domains/tests/grade_test.hpp
 	"../grade.hpp"
 
-1658163718 source:/home/nando-sts/Documents/Trabalho-tp1/domains/tests/idiom_test.cpp
+1658194284 source:/home/nando-sts/Documents/Trabalho-tp1/domains/tests/idiom_test.cpp
 	<string>
 	<iostream>
 	"idiom_test.hpp"
 
-1658163818 /home/nando-sts/Documents/Trabalho-tp1/domains/tests/idiom_test.hpp
+1658194284 /home/nando-sts/Documents/Trabalho-tp1/domains/tests/idiom_test.hpp
 	"../idiom.hpp"
 
-1658165498 source:/home/nando-sts/Documents/Trabalho-tp1/domains/tests/name_test.cpp
+1658194284 source:/home/nando-sts/Documents/Trabalho-tp1/domains/tests/name_test.cpp
 	<string>
 	<iostream>
 	"name_test.hpp"
 
-1658165794 /home/nando-sts/Documents/Trabalho-tp1/domains/tests/name_test.hpp
-	<string>
+1658194284 /home/nando-sts/Documents/Trabalho-tp1/domains/tests/name_test.hpp
 	"../name.hpp"
 
-1658163920 source:/home/nando-sts/Documents/Trabalho-tp1/domains/tests/password_test.cpp
+1658194284 source:/home/nando-sts/Documents/Trabalho-tp1/domains/tests/password_test.cpp
 	<string>
 	<iostream>
 	"password_test.hpp"
 
-1658163965 /home/nando-sts/Documents/Trabalho-tp1/domains/tests/password_test.hpp
+1658260429 /home/nando-sts/Documents/Trabalho-tp1/domains/tests/password_test.hpp
 	<string>
 	"../../domains/password.hpp"
 
-1658176748 source:/home/nando-sts/Documents/Trabalho-tp1/main.cpp
+1658261848 source:/home/nando-sts/Documents/Trabalho-tp1/main.cpp
 	"main.hpp"
 
-1658165348 /home/nando-sts/Documents/Trabalho-tp1/main.hpp
+1658257976 /home/nando-sts/Documents/Trabalho-tp1/main.hpp
 	<iostream>
 	"./domains/tests/country_test.hpp"
 	"./domains/tests/date_test.hpp"
@@ -172,4 +173,45 @@
 	"./domains/tests/name_test.hpp"
 	"./domains/tests/idiom_test.hpp"
 	"./domains/tests/grade_test.hpp"
+	"./entities/tests/accommodation_test.hpp"
+	"./entities/tests/review_test.hpp"
+	"./entities/tests/user_test.hpp"
+
+1658257976 source:/home/nando-sts/Documents/Trabalho-tp1/entities/accommodation.cpp
+	"accommodation.hpp"
+
+1658257976 /home/nando-sts/Documents/Trabalho-tp1/entities/accommodation.hpp
+	"../domains/grade.hpp"
+	"../domains/city.hpp"
+	"../domains/country.hpp"
+	"../domains/code.hpp"
+	"../domains/description.hpp"
+
+1658257976 source:/home/nando-sts/Documents/Trabalho-tp1/entities/review.cpp
+	"review.hpp"
+
+1658257976 /home/nando-sts/Documents/Trabalho-tp1/entities/review.hpp
+	"../domains/grade.hpp"
+	"../domains/code.hpp"
+	"../domains/description.hpp"
+
+1658257976 source:/home/nando-sts/Documents/Trabalho-tp1/entities/user.cpp
+	"user.hpp"
+
+1658257976 /home/nando-sts/Documents/Trabalho-tp1/entities/user.hpp
+	"../domains/name.hpp"
+	"../domains/email.hpp"
+	"../domains/password.hpp"
+	"../domains/idiom.hpp"
+	"../domains/date.hpp"
+	"../domains/description.hpp"
+
+1658257976 /home/nando-sts/Documents/Trabalho-tp1/entities/tests/accommodation_test.hpp
+	"../accommodation.hpp"
+
+1658257976 /home/nando-sts/Documents/Trabalho-tp1/entities/tests/review_test.hpp
+	"../review.hpp"
+
+1658260423 /home/nando-sts/Documents/Trabalho-tp1/entities/tests/user_test.hpp
+	"../user.hpp"
 

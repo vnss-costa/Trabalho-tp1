@@ -12,7 +12,7 @@
  * @brief Classe User
  * @author Fernando Jorge - 200017829
  *
- * Entidade User, que guarda o User
+ * Entidade User, que guarda o usuário com suas informações pessoais
  */
 
 class User

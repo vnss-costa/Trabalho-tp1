@@ -11,7 +11,7 @@
  *
  * @author Fernando Jorge - 200017829
  *
- * Classe para a entidade Acomodação, com todos os campos exigidos.
+ * Classe para a entidade Acomodação, com todos os campos necessários para identificá-la.
  */
 class Accommodation
 {
@@ -84,7 +84,7 @@ public:
    */
   string getCity();
 
-    /**
+  /**
    * @brief retorna o valor do país da entidade
    *
    * @return string com o país da entidade
@@ -104,7 +104,6 @@ public:
    * @return string com a descrição da entidade
    */
   string getDescription();
-
 };
 
 inline string Accommodation::getCode()

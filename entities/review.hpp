@@ -9,7 +9,7 @@ using namespace std;
  * @brief Classe Review
  * @author Fernando Jorge - 200017829
  *
- * Entidade Review, que guarda a avaliação que um usuário fez de uma escurção
+ * Entidade Review, que guarda a avaliação que um usuário fez de uma hospedagem
  */
 class Review
 {
