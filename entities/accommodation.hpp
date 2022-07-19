@@ -112,8 +112,6 @@ inline string Accommodation::getCode()
   return code.getCode();
 }
 
-inline Accommodation::Accommodation(){};
-
 inline string Accommodation::getCity()
 {
   return city.getCity();
@@ -133,5 +131,7 @@ inline string Accommodation::getDescription()
 {
   return description.getDescription();
 }
+
+inline Accommodation::Accommodation(){};
 
 #endif // ENTITIES_ACCOMMODATION_HPP_

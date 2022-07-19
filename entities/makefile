@@ -1,4 +1,4 @@
-all: accommodation.o # review.o user.o
+all: accommodation.o review.o user.o
 	+$(MAKE) -C tests
 
 accommodation.o: accommodation.cpp accommodation.hpp

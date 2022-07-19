@@ -1,4 +1,4 @@
-all: accommodation_test.o # review_test.o user_test.o
+all: accommodation_test.o review_test.o user_test.o
 
 accommodation_test.o: accommodation_test.cpp accommodation_test.hpp
 	g++ -std=c++17 -Wall -c accommodation_test.cpp

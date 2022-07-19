@@ -12,10 +12,3 @@ Idiom::Idiom(string idiom){
     isValid(idiom);
     this->idiom = idiom;
 }
-
-void Idiom::setIdiom(string idiom){
-    isValid(idiom);
-    this->idiom = idiom;
-}
-
-

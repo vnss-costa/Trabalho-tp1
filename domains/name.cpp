@@ -34,9 +34,3 @@ Name::Name(string name)
     isValid(name);
     this->name = name;
 }
-
-void Name::setName(string name)
-{
-    isValid(name);
-    this->name = name;
-}
