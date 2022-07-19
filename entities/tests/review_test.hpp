@@ -10,7 +10,7 @@ using namespace std;
 class ReviewTest
 {
 private:
-  inline static const int sucess = 0;
+  inline static const int success = 0;
   inline static const int failure = 1;
   int state;
   Review *review;

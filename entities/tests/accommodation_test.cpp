@@ -5,7 +5,7 @@ using namespace std;
 void AccommodationTest::create()
 {
   obj = new Accommodation();
-  state = sucess;
+  state = success;
 }
 
 void AccommodationTest::destroy()
