@@ -9,7 +9,6 @@ using namespace std;
  *
  * @author Pedro Henrique Da Costa Vilarins - 180114441
  */
-
 class Code
 {
 private:
@@ -46,12 +45,20 @@ public:
      *
      * @return string com o nome do código
      */
-    string getCode() const;
+    string getCode();
 };
 
-inline string Code::getCode() const
+inline string Code::getCode()
 {
     return code;
 }
+
+inline void Code::setCode(string code)
+{
+    isValid(code);
+    this->code = code;
+}
+
+inline Code::Code(){};
 
 #endif // DOMAINS_CODE_HPP_

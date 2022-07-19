@@ -17,16 +17,16 @@ int AccommodationTest::run()
 {
   create();
 
-  test_validation_code_test("1234561");
+  test_validation_code_test("12345678905");
   test_invalidation_code_test("0");
 
-  test_validation_city_test("Paris");
+  test_validation_city_test("Hong Kong");
   test_invalidation_city_test("São Francisco de Minas");
 
-  test_validation_country_test("Brasil");
+  test_validation_country_test("Emirados");
   test_invalidation_country_test("Nepal");
 
-  test_validation_grade_test(1);
+  test_validation_grade_test(0);
   test_invalidation_grade_test(11);
 
   test_validation_description_test("Um lugar bonito");
@@ -47,6 +47,7 @@ void AccommodationTest::test_validation_code_test(string value)
     obj->setCode(value);
     cout << "Valor aceito!" << endl;
     cout << "O valor atual é: " << obj->getCode() << endl;
+    state = success;
   }
   catch (invalid_argument &message)
   {
@@ -73,6 +74,7 @@ void AccommodationTest::test_invalidation_code_test(string value)
   {
     cout << "Valor rejeitado!" << endl;
     cout << "Mensagem de erro: " << message.what() << endl;
+    state = success;
   }
   cout << "\n==============================\n\n";
 }
@@ -87,6 +89,7 @@ void AccommodationTest::test_validation_city_test(string value)
     obj->setCity(value);
     cout << "Valor aceito!" << endl;
     cout << "O valor atual é: " << obj->getCity() << endl;
+    state = success;
   }
   catch (invalid_argument &message)
   {
@@ -113,6 +116,7 @@ void AccommodationTest::test_invalidation_city_test(string value)
   {
     cout << "Valor rejeitado!" << endl;
     cout << "Mensagem de erro: " << message.what() << endl;
+    state = success;
   }
   cout << "\n==============================\n\n";
 }
@@ -127,6 +131,7 @@ void AccommodationTest::test_validation_country_test(string value)
     obj->setCountry(value);
     cout << "Valor aceito!" << endl;
     cout << "O valor atual é: " << obj->getCountry() << endl;
+    state = success;
   }
   catch (invalid_argument &message)
   {
@@ -153,6 +158,7 @@ void AccommodationTest::test_invalidation_country_test(string value)
   {
     cout << "Valor rejeitado!" << endl;
     cout << "Mensagem de erro: " << message.what() << endl;
+    state = success;
   }
   cout << "\n==============================\n\n";
 }
@@ -167,6 +173,7 @@ void AccommodationTest::test_validation_grade_test(unsigned int value)
     obj->setGrade(value);
     cout << "Valor aceito!" << endl;
     cout << "O valor atual é: " << obj->getGrade() << endl;
+    state = success;
   }
   catch (invalid_argument &message)
   {
@@ -193,6 +200,7 @@ void AccommodationTest::test_invalidation_grade_test(unsigned int value)
   {
     cout << "Valor rejeitado!" << endl;
     cout << "Mensagem de erro: " << message.what() << endl;
+    state = success;
   }
   cout << "\n==============================\n\n";
 }
@@ -208,6 +216,7 @@ void AccommodationTest::test_validation_description_test(string value)
     obj->setDescription(value);
     cout << "Valor aceito!" << endl;
     cout << "O valor atual é: " << obj->getDescription() << endl;
+    state = success;
   }
   catch (invalid_argument &message)
   {
@@ -234,6 +243,7 @@ void AccommodationTest::test_invalidation_description_test(string value)
   {
     cout << "Valor rejeitado!" << endl;
     cout << "Mensagem de erro: " << message.what() << endl;
+    state = success;
   }
   cout << "\n==============================\n\n";
 }
