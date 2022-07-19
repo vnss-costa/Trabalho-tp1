@@ -16,11 +16,11 @@ private:
     const string VALOR_VALIDO = "pedrovilarins077@gmail.com";
     const string VALOR_INVALIDO = "pedrovilarins0777gmail.com";
     Email *email;
-    int estado;
+    int result;
     void create();
     void destroy();
-    void test_validation();
-    void test_invalidation();
+    void test_validation(string email);
+    void test_invalidation(string email);
 
 public:
     const static int success = 0;

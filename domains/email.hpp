@@ -1,22 +1,21 @@
 #ifndef DOMAINS_EMAIL_HPP_
 #define DOMAINS_EMAIL_HPP_
-#include <string>
 #include <iostream>
+#include <string>
 
 using namespace std;
 
 /**
  * @brief Classe para o domínio email
  *
- * @author Pedro Henrique Da Costa Vilarins - 180114441
+ * @authors Pedro Henrique Da Costa Vilarins - 180114441 e Vanessa Paixão Costa - 200028286
  */
 
 class Email
 {
 private:
-    string CARACTERES_ESPECIAIS_REGEX = "(\\w+)(\\.|_)?(\\w*)@(\\w+)(\\.(\\w+))+";
     string email;
-    void isValid(string) const;
+    void isValid(string email);
 
 public:
     /**
@@ -45,12 +44,18 @@ public:
      *
      * @return string com o nome do email
      */
-    string getEmail() const;
+    string getEmail();
 };
 
-inline string Email::getEmail() const
+inline string Email::getEmail()
 {
     return email;
+}
+
+inline void Email::setEmail(string email)
+{
+    isValid(email);
+    this->email = email;
 }
 
 inline Email::Email(){};
