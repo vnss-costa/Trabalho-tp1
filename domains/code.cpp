@@ -3,10 +3,11 @@
 
 void Code::isValid(string code) const
 {
-    if (code.length() != CODE_SIZE)
+    int SIZE = code.length();
+    if (SIZE != CODE_SIZE)
         throw invalid_argument("Tamanho Incorreto");
 
-    for (int i; i < code.length(); i++)
+    for (int i; i < SIZE; i++)
     {
 
         if (isdigit(code[i]) != true)

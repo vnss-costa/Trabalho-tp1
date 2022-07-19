@@ -19,10 +19,7 @@ void Date::isValid(string date)
     string month = date.substr(position + 1, -1);
 
     int size = value.size();
-    int dateSize = date.size();
     int monthSize = month.size();
-
-    bool hasLower = false, hasUpper = false;
 
     if (size != 6)
         throw invalid_argument("A data deve seguir o formato DD/Mes (as 3 primeiras letras do mes)");
