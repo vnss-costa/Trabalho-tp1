@@ -9,7 +9,6 @@ using namespace std;
  *
  * @author Pedro Henrique Da Costa Vilarins - 180114441
  */
-
 class Grade
 {
 private:
@@ -46,12 +45,20 @@ public:
      *
      * @return int com a nota
      */
-    int getGrade() const;
+    int getGrade();
 };
 
-inline int Grade::getGrade() const
+inline int Grade::getGrade()
 {
     return grade;
 }
+
+inline void Grade::setGrade(int grade)
+{
+    isValid(grade);
+    this->grade = grade;
+}
+
+inline Grade::Grade(){};
 
 #endif // DOMAINS_GRADE_HPP_

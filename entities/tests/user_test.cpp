@@ -32,7 +32,7 @@ int UserTest::run()
 void UserTest::create()
 {
   user = new User();
-  state = sucess;
+  state = success;
 }
 
 void UserTest::destroy()

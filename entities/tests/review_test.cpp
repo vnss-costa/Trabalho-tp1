@@ -23,7 +23,7 @@ int ReviewTest::run()
 void ReviewTest::create()
 {
   review = new Review();
-  state = sucess;
+  state = success;
 }
 
 void ReviewTest::destroy()

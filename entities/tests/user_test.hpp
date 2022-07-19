@@ -10,7 +10,7 @@ using namespace std;
 class UserTest
 {
 private:
-  inline static const int sucess = 0;
+  inline static const int success = 0;
   inline static const int failure = 1;
   int state;
   User *user;
