@@ -33,7 +33,7 @@ void CountryTest::test_validation(string country)
     {
         cout << "País testado: " << country << endl
              << endl;
-        this->country->setName(country);
+        this->country->setCountry(country);
         cout << "País aceito!" << endl;
     }
     catch (invalid_argument &message)
@@ -52,7 +52,7 @@ void CountryTest::test_invalidation(string country)
     {
         cout << "País testado: " << country << endl
              << endl;
-        this->country->setName(country);
+        this->country->setCountry(country);
         cout << "País aceito!" << endl;
         result = failure;
     }

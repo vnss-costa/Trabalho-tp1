@@ -57,7 +57,7 @@ public:
      * @param country com o nome a ser inserido
      * @throw invalid_agument caso o valor seja inválido
      */
-    void setName(string country);
+    void setCountry(string country);
 };
 
 inline string Country::getCountry()
@@ -65,7 +65,7 @@ inline string Country::getCountry()
     return country;
 }
 
-inline void Country::setName(string country)
+inline void Country::setCountry(string country)
 {
     isValid(country);
     this->country = country;

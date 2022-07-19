@@ -1,7 +1,7 @@
 #ifndef DOMAINS_EMAIL_HPP_
 #define DOMAINS_EMAIL_HPP_
-
-#include <stdexcept>
+#include <string>
+#include <iostream>
 
 using namespace std;
 
@@ -38,7 +38,6 @@ public:
      * @param email com o nome a ser inserido
      * @throw invalid_agument caso o valor seja inválido
      */
-
     void setEmail(string email);
 
     /**
@@ -53,5 +52,7 @@ inline string Email::getEmail() const
 {
     return email;
 }
+
+inline Email::Email(){};
 
 #endif // DOMAINS_EMAIL_HPP_
