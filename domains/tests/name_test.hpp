@@ -21,9 +21,10 @@ private:
     void destroy();
     void test_validation();
     void test_invalidation();
+
 public:
-    const static int SUCESSO =  0;
-    const static int FALHA   = -1;
+    const static int success = 0;
+    const static int failure = -1;
     int run();
 };
 
