@@ -2,7 +2,6 @@
 #define DOMAINS_EMAIL_HPP_
 #include <iostream>
 #include <string>
-#include <stdexcept>
 
 using namespace std;
 
@@ -14,12 +13,11 @@ using namespace std;
 
 class Email
 {
-private:
-    const string CARACTERES_ESPECIAIS_REGEX = "(\\w+)(\\.|_)?(\\w*)@(\\w+)(\\.(\\w+))+";
-    string email;
-    void isValid(string) const;
+    private:
+        string email;
+        void isValid(string email);
 
-public:
+    public:
 
     /**
      * @brief Construtor padrão do domínio de email
@@ -48,12 +46,18 @@ public:
      *
      * @return string com o nome do email
      */
-    string getEmail() const;
+    string getEmail();
 };
 
-inline string Email::getEmail() const
+inline string Email::getEmail()
 {
     return email;
+}
+
+inline void Email::setEmail(string email)
+{
+    isValid(email);
+    this->email = email;
 }
 
 inline Email::Email(){};
