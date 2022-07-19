@@ -2,7 +2,7 @@
 #define DOMAINS_TESTS_COUNTRY_TEST_HPP_
 
 #include <string>
-#include "../../domains/country.hpp"
+#include "../country.hpp"
 using namespace std;
 
 /**

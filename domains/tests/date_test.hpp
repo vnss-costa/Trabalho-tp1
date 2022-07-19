@@ -2,7 +2,7 @@
 #define DOMAINS_TESTS_DATE_TEST_HPP_
 
 #include <string>
-#include "../../domains/date.hpp"
+#include "../date.hpp"
 using namespace std;
 
 /**

@@ -2,7 +2,7 @@
 #define DOMAINS_TESTS_DESCRIPTION_TEST_HPP_
 
 #include <string>
-#include "../../domains/description.hpp"
+#include "../description.hpp"
 using namespace std;
 
 /**

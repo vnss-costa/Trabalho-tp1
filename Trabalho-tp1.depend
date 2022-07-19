@@ -95,27 +95,27 @@
 	<iostream>
 	"country_test.hpp"
 
-1658260429 /home/nando-sts/Documents/Trabalho-tp1/domains/tests/country_test.hpp
+1658259459 /home/nando-sts/Documents/Trabalho-tp1/domains/tests/country_test.hpp
 	<string>
-	"../../domains/country.hpp"
+	"../country.hpp"
 
 1658194284 source:/home/nando-sts/Documents/Trabalho-tp1/domains/tests/date_test.cpp
 	"date_test.hpp"
 	<string>
 	<iostream>
 
-1658260429 /home/nando-sts/Documents/Trabalho-tp1/domains/tests/date_test.hpp
+1658259459 /home/nando-sts/Documents/Trabalho-tp1/domains/tests/date_test.hpp
 	<string>
-	"../../domains/date.hpp"
+	"../date.hpp"
 
 1658194284 source:/home/nando-sts/Documents/Trabalho-tp1/domains/tests/description_test.cpp
 	<string>
 	<iostream>
 	"description_test.hpp"
 
-1658260429 /home/nando-sts/Documents/Trabalho-tp1/domains/tests/description_test.hpp
+1658259459 /home/nando-sts/Documents/Trabalho-tp1/domains/tests/description_test.hpp
 	<string>
-	"../../domains/description.hpp"
+	"../description.hpp"
 
 1658257972 source:/home/nando-sts/Documents/Trabalho-tp1/domains/tests/email_test.cpp
 	<string>
@@ -154,11 +154,11 @@
 	<iostream>
 	"password_test.hpp"
 
-1658260429 /home/nando-sts/Documents/Trabalho-tp1/domains/tests/password_test.hpp
+1658259459 /home/nando-sts/Documents/Trabalho-tp1/domains/tests/password_test.hpp
 	<string>
-	"../../domains/password.hpp"
+	"../password.hpp"
 
-1658261848 source:/home/nando-sts/Documents/Trabalho-tp1/main.cpp
+1658257976 source:/home/nando-sts/Documents/Trabalho-tp1/main.cpp
 	"main.hpp"
 
 1658257976 /home/nando-sts/Documents/Trabalho-tp1/main.hpp
@@ -176,16 +176,6 @@
 	"./entities/tests/accommodation_test.hpp"
 	"./entities/tests/review_test.hpp"
 	"./entities/tests/user_test.hpp"
-
-1658257976 source:/home/nando-sts/Documents/Trabalho-tp1/entities/accommodation.cpp
-	"accommodation.hpp"
-
-1658257976 /home/nando-sts/Documents/Trabalho-tp1/entities/accommodation.hpp
-	"../domains/grade.hpp"
-	"../domains/city.hpp"
-	"../domains/country.hpp"
-	"../domains/code.hpp"
-	"../domains/description.hpp"
 
 1658257976 source:/home/nando-sts/Documents/Trabalho-tp1/entities/review.cpp
 	"review.hpp"
@@ -209,9 +199,16 @@
 1658257976 /home/nando-sts/Documents/Trabalho-tp1/entities/tests/accommodation_test.hpp
 	"../accommodation.hpp"
 
+1658257976 /home/nando-sts/Documents/Trabalho-tp1/entities/accommodation.hpp
+	"../domains/grade.hpp"
+	"../domains/city.hpp"
+	"../domains/country.hpp"
+	"../domains/code.hpp"
+	"../domains/description.hpp"
+
 1658257976 /home/nando-sts/Documents/Trabalho-tp1/entities/tests/review_test.hpp
 	"../review.hpp"
 
-1658260423 /home/nando-sts/Documents/Trabalho-tp1/entities/tests/user_test.hpp
+1658257976 /home/nando-sts/Documents/Trabalho-tp1/entities/tests/user_test.hpp
 	"../user.hpp"
 

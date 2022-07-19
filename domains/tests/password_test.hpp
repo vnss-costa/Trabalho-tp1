@@ -2,7 +2,7 @@
 #define DOMAINS_TESTS_PASSWORD_TEST_HPP_
 
 #include <string>
-#include "../../domains/password.hpp"
+#include "../password.hpp"
 using namespace std;
 
 /**
