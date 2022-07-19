@@ -9,6 +9,18 @@ int EmailTest::run()
     test_validation("vanessapaixao@cjr.org.br");
     test_invalidation("vanessacosta[paixao@cjr.org.br");
     test_invalidation("local_dominio2.org.br");
+    test_invalidation("email-invalido.por-excesso_de_caracteres.precisamos-de_outro.Exemplo@dominio3.org.br");
+    test_invalidation("vanessa_-paixao@unb.br");
+    test_invalidation(".vanessapaixao@unb.br");
+    test_invalidation("vanessapaixao@unbbr");
+    test_invalidation("vanessapaixao@.unb.br");
+    test_invalidation("vanessapaixao@unb..br");
+    test_invalidation("local@dominio-invalido-por-termos-com-excesso-de-caracteres-precisamos-de.outro.Exemplo");
+    test_invalidation("vanessapaixao@-unb.br");
+    test_invalidation("vanessapaixao@unb.br-");
+    test_invalidation("vanessapaixao@aluno*unb.br");
+
+
     destroy();
     return result;
 }
