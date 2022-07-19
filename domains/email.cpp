@@ -1,34 +1,59 @@
 #include <iostream>
 #include <string>
+#include <ctype.h>
 #include "email.hpp"
 #include <regex>
 
 using namespace std;
 
-void Email::isValid(string email) const{
+Email::Email(string email){
+    isValid(email);
+    setEmail(email);
+}
+
+void Email::isValid(string email){
+    int size = email.length();
     int position = email.find("@");
 
-    if ((position == 0) || (position == email.length()))
+    if ((position == 0) || (position == size))
         throw invalid_argument("Email " + email + " com formato inválido. Correto: local@dominio");
 
     string locale = email.substr(0, position);
     string domain = email.substr(position + 1, -1);
-
-    if (locale.length() > 64)
+    int locale_size = locale.length();
+    int doamin_size = locale.length();
+    
+    if (locale_size > 64)
         throw invalid_argument("Parte local precisa ter no máximo 64 caracteres");
     
-    if (!regex_match(email, regex(CARACTERES_ESPECIAIS_REGEX)))
-        throw invalid_argument("Erro de sintaxe! Correto: local@dominio");
-    
-    contador = 0;
-    for (int i = 0; i < domain; i++){
-        if(email[i] == ".")
+
+    int contador = 0;
+    for (int i = 0; i < doamin_size; i++){
+        if(email[i] == '.')
             contador = 0;
         contador++;
-        if(contador ==  64)
+        if(contador ==  64){
             throw invalid_argument("Cada termo deve ser composto por no máximo 63 caracteres");
             break; 
+        }
+    }
 
+    if (!regex_match(email, regex("[a-zA-Z0-9_.-]*(@)[a-zA-Z0-9.-]*")))
+        throw invalid_argument("Erro de sintaxe! Correto: local@dominio");
+
+    for (int i = 0; i < doamin_size; i++){
+        if((email[i] == '.') && (email[i+1] == '.')){
+            throw invalid_argument("O termo não pode conter '.' seguidos");
+            break; 
+        }
+
+    }
+
+    for (int i = 0; i < locale_size; i++){
+        if (email[i] == '.'){
+            if (!isalpha(email[i+1]) || (!isdigit(email[i+1])))
+                throw invalid_argument("Um caractere ou digito deve seguir o '.'");
+        }
     }
 
     if (locale[0] == '.')
@@ -45,12 +70,3 @@ void Email::isValid(string email) const{
 
 }
 
-Email::Email(string email){
-    isValid(email);
-    this->email = email;
-}
-
-void Email::setEmail(string email){
-    isValid(email);
-    this->email = email;
-}
