@@ -21,8 +21,8 @@ int UserTest::run()
   test_validation_birthday_test_block("30/Fev");
   test_invalidation_birthday_test_block("12/Abr");
 
-  test_invalidation_description_test_block("Descricao valida");
-  test_validation_description_test_block("Descrição    inválida");
+  test_validation_description_test_block("Descricao valida");
+  test_invalidation_description_test_block("Descrição    inválida");
 
   destroy();
 
@@ -50,6 +50,7 @@ void UserTest::test_validation_email_test_block(string email)
     user->setEmail(email);
     cout << "Email aceito!" << endl;
     cout << "O Email atual é: " << user->getEmail() << endl;
+    state = success;
   }
   catch (invalid_argument &message)
   {
@@ -76,6 +77,7 @@ void UserTest::test_invalidation_email_test_block(string email)
   {
     cout << "Email rejeitado!" << endl;
     cout << "Mensagem de erro: " << message.what() << endl;
+    state = success;
   }
   cout << "\n==============================\n\n";
 }
@@ -90,6 +92,7 @@ void UserTest::test_validation_name_test_block(string name)
     user->setName(name);
     cout << "Nome aceito!" << endl;
     cout << "O Nome atual é: " << user->getName() << endl;
+    state = success;
   }
   catch (invalid_argument &message)
   {
@@ -116,6 +119,7 @@ void UserTest::test_invalidation_name_test_block(string name)
   {
     cout << "Nome rejeitado!" << endl;
     cout << "Mensagem de erro: " << message.what() << endl;
+    state = success;
   }
   cout << "\n==============================\n\n";
 }
@@ -130,6 +134,7 @@ void UserTest::test_validation_password_test_block(string password)
     user->setPassword(password);
     cout << "Senha aceita!" << endl;
     cout << "a Senha atual é: " << user->getPassword() << endl;
+    state = success;
   }
   catch (invalid_argument &message)
   {
@@ -156,6 +161,7 @@ void UserTest::test_invalidation_password_test_block(string password)
   {
     cout << "Senha rejeitada!" << endl;
     cout << "Mensagem de erro: " << message.what() << endl;
+    state = success;
   }
   cout << "\n==============================\n\n";
 }
@@ -170,6 +176,7 @@ void UserTest::test_validation_idiom_test_block(string idiom)
     user->setPassword(idiom);
     cout << "idioma aceito!" << endl;
     cout << "o idioma atual é: " << user->getPassword() << endl;
+    state = success;
   }
   catch (invalid_argument &message)
   {
@@ -196,6 +203,7 @@ void UserTest::test_invalidation_idiom_test_block(string idiom)
   {
     cout << "idioma rejeitado!" << endl;
     cout << "Mensagem de erro: " << message.what() << endl;
+    state = success;
   }
   cout << "\n==============================\n\n";
 }
@@ -210,6 +218,7 @@ void UserTest::test_validation_birthday_test_block(string birthday)
     user->setDate(birthday);
     cout << "Aniversário aceito!" << endl;
     cout << "O aniversário atual é: " << user->getDate() << endl;
+    state = success;
   }
   catch (invalid_argument &message)
   {
@@ -236,6 +245,7 @@ void UserTest::test_invalidation_birthday_test_block(string birthday)
   {
     cout << "Aniversário rejeitado!" << endl;
     cout << "Mensagem de erro: " << message.what() << endl;
+    state = success;
   }
   cout << "\n==============================\n\n";
 }
@@ -250,6 +260,7 @@ void UserTest::test_validation_description_test_block(string description)
     user->setPassword(description);
     cout << "Descrição aceita!" << endl;
     cout << "A descrição atual é: " << user->getPassword() << endl;
+    state = success;
   }
   catch (invalid_argument &message)
   {
@@ -276,6 +287,7 @@ void UserTest::test_invalidation_description_test_block(string description)
   {
     cout << "Descrição rejeitada!" << endl;
     cout << "Mensagem de erro: " << message.what() << endl;
+    state = success;
   }
   cout << "\n==============================\n\n";
 }

@@ -41,6 +41,7 @@ void ReviewTest::test_validation_description_test_block(string value)
     review->setDescription(value);
     cout << "Valor aceito!" << endl;
     cout << "O valor atual é: " << review->getDescription() << endl;
+    state = success;
   }
   catch (invalid_argument &message)
   {
@@ -67,6 +68,7 @@ void ReviewTest::test_invalidation_description_test_block(string value)
   {
     cout << "Valor rejeitado!" << endl;
     cout << "Mensagem de erro: " << message.what() << endl;
+    state = success;
   }
   cout << "\n==============================\n\n";
 }
@@ -81,6 +83,7 @@ void ReviewTest::test_validation_code_test_block(string value)
     review->setCode(value);
     cout << "Valor aceito!" << endl;
     cout << "O valor atual é: " << review->getCode() << endl;
+    state = success;
   }
   catch (invalid_argument &message)
   {
@@ -107,6 +110,7 @@ void ReviewTest::test_invalidation_code_test_block(string value)
   {
     cout << "Valor rejeitado!" << endl;
     cout << "Mensagem de erro: " << message.what() << endl;
+    state = success;
   }
   cout << "\n==============================\n\n";
 }
@@ -121,6 +125,7 @@ void ReviewTest::test_validation_grade_test_block(unsigned int value)
     review->setGrade(value);
     cout << "Valor aceito!" << endl;
     cout << "O valor atual é: " << review->getGrade() << endl;
+    state = success;
   }
   catch (invalid_argument &message)
   {
@@ -147,6 +152,7 @@ void ReviewTest::test_invalidation_grade_test_block(unsigned int value)
   {
     cout << "Valor rejeitado!" << endl;
     cout << "Mensagem de erro: " << message.what() << endl;
+    state = success;
   }
   cout << "\n==============================\n\n";
 }

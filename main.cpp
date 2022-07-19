@@ -79,19 +79,19 @@ int main()
         return Main::failure;
     }
 
-    // ReviewTest review = ReviewTest();
-    // if (review.run() == Main::failure)
-    // {
-    //     cout << "Erro no teste da entidade avaliação" << endl;
-    //     return Main::failure;
-    // }
+    ReviewTest review = ReviewTest();
+    if (review.run() == Main::failure)
+    {
+        cout << "Erro no teste da entidade avaliação" << endl;
+        return Main::failure;
+    }
 
-    // UserTest user = UserTest();
-    // if (user.run() == Main::failure)
-    // {
-    //     cout << "Erro no teste da entidade Usuário" << endl;
-    //     return Main::failure;
-    // }
+    UserTest user = UserTest();
+    if (user.run() == Main::failure)
+    {
+        cout << "Erro no teste da entidade Usuário" << endl;
+        return Main::failure;
+    }
 
     cout << endl
          << endl
