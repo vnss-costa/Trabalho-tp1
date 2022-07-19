@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Trabalho-tp1" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/Trabalho-tp1" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/Trabalho-tp1" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+		</Compiler>
+		<Unit filename="domains/city.cpp" />
+		<Unit filename="domains/city.hpp" />
+		<Unit filename="domains/code.cpp" />
+		<Unit filename="domains/code.hpp" />
+		<Unit filename="domains/country.cpp" />
+		<Unit filename="domains/country.hpp" />
+		<Unit filename="domains/date.cpp" />
+		<Unit filename="domains/date.hpp" />
+		<Unit filename="domains/description.cpp" />
+		<Unit filename="domains/description.hpp" />
+		<Unit filename="domains/email.cpp" />
+		<Unit filename="domains/email.hpp" />
+		<Unit filename="domains/grade.cpp" />
+		<Unit filename="domains/grade.hpp" />
+		<Unit filename="domains/idiom.cpp" />
+		<Unit filename="domains/idiom.hpp" />
+		<Unit filename="domains/name.cpp" />
+		<Unit filename="domains/name.hpp" />
+		<Unit filename="domains/password.cpp" />
+		<Unit filename="domains/password.hpp" />
+		<Unit filename="domains/tests/city_test.cpp" />
+		<Unit filename="domains/tests/city_test.hpp" />
+		<Unit filename="domains/tests/code_test.cpp" />
+		<Unit filename="domains/tests/code_test.hpp" />
+		<Unit filename="domains/tests/country_test.cpp" />
+		<Unit filename="domains/tests/country_test.hpp" />
+		<Unit filename="domains/tests/date_test.cpp" />
+		<Unit filename="domains/tests/date_test.hpp" />
+		<Unit filename="domains/tests/description_test.cpp" />
+		<Unit filename="domains/tests/description_test.hpp" />
+		<Unit filename="domains/tests/email_test.cpp" />
+		<Unit filename="domains/tests/email_test.hpp" />
+		<Unit filename="domains/tests/grade_test.cpp" />
+		<Unit filename="domains/tests/grade_test.hpp" />
+		<Unit filename="domains/tests/idiom_test.cpp" />
+		<Unit filename="domains/tests/idiom_test.hpp" />
+		<Unit filename="domains/tests/name_test.cpp" />
+		<Unit filename="domains/tests/name_test.hpp" />
+		<Unit filename="domains/tests/password_test.cpp" />
+		<Unit filename="domains/tests/password_test.hpp" />
+		<Unit filename="main.cpp" />
+		<Unit filename="main.hpp" />
+		<Extensions />
+	</Project>
+</CodeBlocks_project_file>
