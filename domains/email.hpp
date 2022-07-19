@@ -1,6 +1,7 @@
 #ifndef DOMAINS_EMAIL_HPP_
 #define DOMAINS_EMAIL_HPP_
-
+#include <iostream>
+#include <string>
 #include <stdexcept>
 
 using namespace std;
@@ -8,7 +9,7 @@ using namespace std;
 /**
  * @brief Classe para o domínio email
  *
- * @author Pedro Henrique Da Costa Vilarins - 180114441
+ * @authors Pedro Henrique Da Costa Vilarins - 180114441 e Vanessa Paixão Costa - 200028286
  */
 
 class Email
@@ -19,6 +20,12 @@ private:
     void isValid(string) const;
 
 public:
+
+    /**
+     * @brief Construtor padrão do domínio de email
+     */
+    Email();
+    
     /**
      * @brief Construtor que seleciona o email informada
      *
@@ -48,5 +55,7 @@ inline string Email::getEmail() const
 {
     return email;
 }
+
+inline Email::Email(){};
 
 #endif // DOMAINS_EMAIL_HPP_
