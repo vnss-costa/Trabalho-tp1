@@ -20,6 +20,11 @@ private:
 
 public:
     /**
+     * @brief Método construtor da Nota
+     */
+    Grade();
+
+    /**
      * @brief Construtor que seleciona a nota informada
      *
      * @param grade é a nota que se deseja inserir

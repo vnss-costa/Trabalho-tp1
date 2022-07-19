@@ -18,6 +18,11 @@ private:
 
 public:
     /**
+     * @brief Método construtor do nome
+     */
+    Name();
+
+    /**
      * @brief Construtor que seleciona o nome informada
      *
      * @param name é o nome que se deseja inserir

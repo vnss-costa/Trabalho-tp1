@@ -20,6 +20,11 @@ private:
 
 public:
     /**
+     * @brief Método construtor do email
+     */
+    Email();
+
+    /**
      * @brief Construtor que seleciona o email informada
      *
      * @param email é o email que se deseja inserir

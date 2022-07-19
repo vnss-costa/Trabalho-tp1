@@ -20,6 +20,11 @@ private:
 
 public:
     /**
+     * @brief Método construtor do Código
+     */
+    Code();
+
+    /**
      * @brief Construtor que seleciona o código informada
      *
      * @param code é o código que se deseja inserir
