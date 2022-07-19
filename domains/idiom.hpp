@@ -20,6 +20,11 @@ private:
 
 public:
     /**
+     * @brief Método construtor do idioma
+     */
+    Idiom();
+
+    /**
      * @brief Construtor que seleciona o idioma informada
      *
      * @param idiom é o idioma que se deseja inserir

@@ -71,6 +71,12 @@
 		<Unit filename="domains/tests/name_test.hpp" />
 		<Unit filename="domains/tests/password_test.cpp" />
 		<Unit filename="domains/tests/password_test.hpp" />
+		<Unit filename="entities/review.cpp" />
+		<Unit filename="entities/review.hpp" />
+		<Unit filename="entities/session.cpp" />
+		<Unit filename="entities/session.hpp" />
+		<Unit filename="entities/user.cpp" />
+		<Unit filename="entities/user.hpp" />
 		<Unit filename="main.cpp" />
 		<Unit filename="main.hpp" />
 		<Extensions />
