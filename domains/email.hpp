@@ -14,7 +14,7 @@ using namespace std;
 class Email
 {
 private:
-    const string CARACTERES_ESPECIAIS_REGEX = "(\\w+)(\\.|_)?(\\w*)@(\\w+)(\\.(\\w+))+";
+    string CARACTERES_ESPECIAIS_REGEX = "(\\w+)(\\.|_)?(\\w*)@(\\w+)(\\.(\\w+))+";
     string email;
     void isValid(string) const;
 
