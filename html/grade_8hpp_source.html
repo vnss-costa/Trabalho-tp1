@@ -75,30 +75,42 @@ $(function() {
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keyword">using namespace </span>std;</div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
-<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="class_grade.html">   13</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_grade.html">Grade</a></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;{</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> MIN = 0;</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> MAX = 10;</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keywordtype">int</span> grade;</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keywordtype">void</span> isValid(<span class="keywordtype">int</span>) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <a class="code" href="class_grade.html">Grade</a>(<span class="keywordtype">int</span> grade);</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordtype">void</span> setGrade(<span class="keywordtype">int</span> grade);</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordtype">int</span> getGrade() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;};</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
-<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="class_grade.html#afe89878521570238755ba604019a9fee">   47</a></span>&#160;<span class="keyword">inline</span> <span class="keywordtype">int</span> <a class="code" href="class_grade.html#afe89878521570238755ba604019a9fee">Grade::getGrade</a>()<span class="keyword"> const</span></div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keyword"></span>{</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordflow">return</span> grade;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;}</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// DOMAINS_GRADE_HPP_</span></div>
-<div class="ttc" id="aclass_grade_html"><div class="ttname"><a href="class_grade.html">Grade</a></div><div class="ttdoc">Classe para o domínio nota.</div><div class="ttdef"><b>Definition:</b> grade.hpp:14</div></div>
-<div class="ttc" id="aclass_grade_html_afe89878521570238755ba604019a9fee"><div class="ttname"><a href="class_grade.html#afe89878521570238755ba604019a9fee">Grade::getGrade</a></div><div class="ttdeci">int getGrade() const</div><div class="ttdoc">Retorna qual a nota armazenada no objeto.</div><div class="ttdef"><b>Definition:</b> grade.hpp:47</div></div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="class_grade.html">   12</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_grade.html">Grade</a></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;{</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> MIN = 0;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> MAX = 10;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keywordtype">int</span> grade;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keywordtype">void</span> isValid(<span class="keywordtype">int</span>) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <a class="code" href="class_grade.html">Grade</a>();</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <a class="code" href="class_grade.html">Grade</a>(<span class="keywordtype">int</span> grade);</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordtype">void</span> setGrade(<span class="keywordtype">int</span> grade);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordtype">int</span> getGrade();</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;};</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="class_grade.html#a54452a8532d8c90519c9059fd6d492f7">   51</a></span>&#160;<span class="keyword">inline</span> <span class="keywordtype">int</span> <a class="code" href="class_grade.html#a54452a8532d8c90519c9059fd6d492f7">Grade::getGrade</a>()</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;{</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordflow">return</span> grade;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;}</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="class_grade.html#a949d523cf45201abdbfe1917e0309458">   56</a></span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="class_grade.html#a949d523cf45201abdbfe1917e0309458">Grade::setGrade</a>(<span class="keywordtype">int</span> grade)</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;{</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    isValid(grade);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    this-&gt;grade = grade;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;}</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
+<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="class_grade.html#aa8b29eef5c6e24912eea3a4b09f10646">   62</a></span>&#160;<span class="keyword">inline</span> <a class="code" href="class_grade.html#aa8b29eef5c6e24912eea3a4b09f10646">Grade::Grade</a>(){};</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// DOMAINS_GRADE_HPP_</span></div>
+<div class="ttc" id="aclass_grade_html"><div class="ttname"><a href="class_grade.html">Grade</a></div><div class="ttdoc">Classe para o domínio nota.</div><div class="ttdef"><b>Definition:</b> grade.hpp:13</div></div>
+<div class="ttc" id="aclass_grade_html_a54452a8532d8c90519c9059fd6d492f7"><div class="ttname"><a href="class_grade.html#a54452a8532d8c90519c9059fd6d492f7">Grade::getGrade</a></div><div class="ttdeci">int getGrade()</div><div class="ttdoc">Retorna qual a nota armazenada no objeto.</div><div class="ttdef"><b>Definition:</b> grade.hpp:51</div></div>
+<div class="ttc" id="aclass_grade_html_a949d523cf45201abdbfe1917e0309458"><div class="ttname"><a href="class_grade.html#a949d523cf45201abdbfe1917e0309458">Grade::setGrade</a></div><div class="ttdeci">void setGrade(int grade)</div><div class="ttdoc">Configura a nota para o valor inserido.</div><div class="ttdef"><b>Definition:</b> grade.hpp:56</div></div>
+<div class="ttc" id="aclass_grade_html_aa8b29eef5c6e24912eea3a4b09f10646"><div class="ttname"><a href="class_grade.html#aa8b29eef5c6e24912eea3a4b09f10646">Grade::Grade</a></div><div class="ttdeci">Grade()</div><div class="ttdoc">Método construtor da Nota.</div><div class="ttdef"><b>Definition:</b> grade.hpp:62</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

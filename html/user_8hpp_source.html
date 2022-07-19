@@ -1,0 +1,158 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>My Project: Código-Fonte de entities/user.hpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Busca','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Busca');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_9404ca00d5cf333c309ae0ebf80749c4.html">entities</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">user.hpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef ENTITIES_USER_HPP_</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define ENTITIES_USER_HPP_</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;../domains/name.hpp&quot;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;../domains/email.hpp&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;../domains/password.hpp&quot;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;../domains/idiom.hpp&quot;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;../domains/date.hpp&quot;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;../domains/description.hpp&quot;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="class_user.html">   18</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_user.html">User</a></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;{</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <a class="code" href="class_name.html">Name</a> name;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <a class="code" href="class_email.html">Email</a> email;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <a class="code" href="class_password.html">Password</a> password;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <a class="code" href="class_idiom.html">Idiom</a> idiom;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <a class="code" href="class_date.html">Date</a> date;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <a class="code" href="class_description.html">Description</a> description;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <a class="code" href="class_user.html#a4a0137053e591fbb79d9057dd7d2283d">User</a>();</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <a class="code" href="class_user.html#a4a0137053e591fbb79d9057dd7d2283d">User</a>(<a class="code" href="class_email.html">Email</a>);</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <a class="code" href="class_user.html#a4a0137053e591fbb79d9057dd7d2283d">User</a>(<a class="code" href="class_email.html">Email</a>, <a class="code" href="class_name.html">Name</a>);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <a class="code" href="class_user.html#a4a0137053e591fbb79d9057dd7d2283d">User</a>(<a class="code" href="class_email.html">Email</a>, <a class="code" href="class_name.html">Name</a>, <a class="code" href="class_password.html">Password</a>);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <a class="code" href="class_user.html#a4a0137053e591fbb79d9057dd7d2283d">User</a>(<a class="code" href="class_email.html">Email</a>, <a class="code" href="class_name.html">Name</a>, <a class="code" href="class_password.html">Password</a>, <a class="code" href="class_idiom.html">Idiom</a>);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <a class="code" href="class_user.html#a4a0137053e591fbb79d9057dd7d2283d">User</a>(<a class="code" href="class_email.html">Email</a>, <a class="code" href="class_name.html">Name</a>, <a class="code" href="class_password.html">Password</a>, <a class="code" href="class_idiom.html">Idiom</a>, <a class="code" href="class_date.html">Date</a>);</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <a class="code" href="class_user.html#a4a0137053e591fbb79d9057dd7d2283d">User</a>(<a class="code" href="class_email.html">Email</a>, <a class="code" href="class_name.html">Name</a>, <a class="code" href="class_password.html">Password</a>, <a class="code" href="class_idiom.html">Idiom</a>, <a class="code" href="class_date.html">Date</a>, <a class="code" href="class_description.html">Description</a>);</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_user.html#a5370952f73a8d10d7c95d0f9c782603b">setName</a>(<span class="keywordtype">string</span>);</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <span class="keywordtype">string</span> <a class="code" href="class_user.html#adb316ac38d5f62a967686e7b736a0469">getName</a>();</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160; </div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_user.html#a79486f90c900c5dfc272f0ad9a204c95">setEmail</a>(<span class="keywordtype">string</span>);</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160; </div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    <span class="keywordtype">string</span> <a class="code" href="class_user.html#a851bfaab8e406de66700edb326c58e38">getEmail</a>();</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160; </div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_user.html#ab8d3c965902b378fc3472b388a97d56d">setPassword</a>(<span class="keywordtype">string</span>);</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160; </div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    <span class="keywordtype">string</span> <a class="code" href="class_user.html#a090eb9ee354cc25b2e8240b714b39d64">getPassword</a>();</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160; </div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_user.html#a23a6cc212fb9606a8d90e5ab4d45f8bd">setIdiom</a>(<span class="keywordtype">string</span> idiom);</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160; </div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    <span class="keywordtype">string</span> <a class="code" href="class_user.html#afef418190a9d783a0b3de88e8b1e9787">getIdiom</a>();</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160; </div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_user.html#af214bbaebab833a6790b784ac3e5809d">setDate</a>(<span class="keywordtype">string</span> date);</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160; </div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    <span class="keywordtype">string</span> <a class="code" href="class_user.html#a2dda487344933da0e973388e0882f35d">getDate</a>();</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160; </div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_user.html#a75fd281213a732e4de2926ee3e5f83d5">setDescription</a>(<span class="keywordtype">string</span> description);</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160; </div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;    <span class="keywordtype">string</span> <a class="code" href="class_user.html#a7f6e3f018b2b41f1f0fd80909c9fb26d">getDescription</a>();</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;};</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160; </div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// ENTITIES_USER_HPP_</span></div>
+<div class="ttc" id="aclass_date_html"><div class="ttname"><a href="class_date.html">Date</a></div><div class="ttdoc">Classe para o domínio data.</div><div class="ttdef"><b>Definition:</b> date.hpp:12</div></div>
+<div class="ttc" id="aclass_description_html"><div class="ttname"><a href="class_description.html">Description</a></div><div class="ttdoc">Classe para o domínio descrição.</div><div class="ttdef"><b>Definition:</b> description.hpp:12</div></div>
+<div class="ttc" id="aclass_email_html"><div class="ttname"><a href="class_email.html">Email</a></div><div class="ttdoc">Classe para o domínio email.</div><div class="ttdef"><b>Definition:</b> email.hpp:15</div></div>
+<div class="ttc" id="aclass_idiom_html"><div class="ttname"><a href="class_idiom.html">Idiom</a></div><div class="ttdoc">Classe para o domínio idioma.</div><div class="ttdef"><b>Definition:</b> idiom.hpp:13</div></div>
+<div class="ttc" id="aclass_name_html"><div class="ttname"><a href="class_name.html">Name</a></div><div class="ttdoc">Classe para o domínio nome.</div><div class="ttdef"><b>Definition:</b> name.hpp:13</div></div>
+<div class="ttc" id="aclass_password_html"><div class="ttname"><a href="class_password.html">Password</a></div><div class="ttdoc">Classe para o domínio senha.</div><div class="ttdef"><b>Definition:</b> password.hpp:11</div></div>
+<div class="ttc" id="aclass_user_html"><div class="ttname"><a href="class_user.html">User</a></div><div class="ttdoc">Classe User.</div><div class="ttdef"><b>Definition:</b> user.hpp:19</div></div>
+<div class="ttc" id="aclass_user_html_a090eb9ee354cc25b2e8240b714b39d64"><div class="ttname"><a href="class_user.html#a090eb9ee354cc25b2e8240b714b39d64">User::getPassword</a></div><div class="ttdeci">string getPassword()</div><div class="ttdoc">retorna a senha do usuário</div><div class="ttdef"><b>Definition:</b> user.cpp:61</div></div>
+<div class="ttc" id="aclass_user_html_a23a6cc212fb9606a8d90e5ab4d45f8bd"><div class="ttname"><a href="class_user.html#a23a6cc212fb9606a8d90e5ab4d45f8bd">User::setIdiom</a></div><div class="ttdeci">void setIdiom(string idiom)</div><div class="ttdoc">atualiza o valor do idioma</div><div class="ttdef"><b>Definition:</b> user.cpp:96</div></div>
+<div class="ttc" id="aclass_user_html_a2dda487344933da0e973388e0882f35d"><div class="ttname"><a href="class_user.html#a2dda487344933da0e973388e0882f35d">User::getDate</a></div><div class="ttdeci">string getDate()</div><div class="ttdoc">retorna a data de aniversário do usuário</div><div class="ttdef"><b>Definition:</b> user.cpp:71</div></div>
+<div class="ttc" id="aclass_user_html_a4a0137053e591fbb79d9057dd7d2283d"><div class="ttname"><a href="class_user.html#a4a0137053e591fbb79d9057dd7d2283d">User::User</a></div><div class="ttdeci">User()</div><div class="ttdoc">Construtor padrão do usuário.</div><div class="ttdef"><b>Definition:</b> user.cpp:4</div></div>
+<div class="ttc" id="aclass_user_html_a5370952f73a8d10d7c95d0f9c782603b"><div class="ttname"><a href="class_user.html#a5370952f73a8d10d7c95d0f9c782603b">User::setName</a></div><div class="ttdeci">void setName(string)</div><div class="ttdoc">atualiza o valor do nome do usuário</div><div class="ttdef"><b>Definition:</b> user.cpp:86</div></div>
+<div class="ttc" id="aclass_user_html_a75fd281213a732e4de2926ee3e5f83d5"><div class="ttname"><a href="class_user.html#a75fd281213a732e4de2926ee3e5f83d5">User::setDescription</a></div><div class="ttdeci">void setDescription(string description)</div><div class="ttdoc">atualiza o valor da descrição</div><div class="ttdef"><b>Definition:</b> user.cpp:106</div></div>
+<div class="ttc" id="aclass_user_html_a79486f90c900c5dfc272f0ad9a204c95"><div class="ttname"><a href="class_user.html#a79486f90c900c5dfc272f0ad9a204c95">User::setEmail</a></div><div class="ttdeci">void setEmail(string)</div><div class="ttdoc">atualiza o valor do email</div><div class="ttdef"><b>Definition:</b> user.cpp:81</div></div>
+<div class="ttc" id="aclass_user_html_a7f6e3f018b2b41f1f0fd80909c9fb26d"><div class="ttname"><a href="class_user.html#a7f6e3f018b2b41f1f0fd80909c9fb26d">User::getDescription</a></div><div class="ttdeci">string getDescription()</div><div class="ttdoc">retorna a descrição do usuário</div><div class="ttdef"><b>Definition:</b> user.cpp:76</div></div>
+<div class="ttc" id="aclass_user_html_a851bfaab8e406de66700edb326c58e38"><div class="ttname"><a href="class_user.html#a851bfaab8e406de66700edb326c58e38">User::getEmail</a></div><div class="ttdeci">string getEmail()</div><div class="ttdoc">retorna o email do usuário</div><div class="ttdef"><b>Definition:</b> user.cpp:51</div></div>
+<div class="ttc" id="aclass_user_html_ab8d3c965902b378fc3472b388a97d56d"><div class="ttname"><a href="class_user.html#ab8d3c965902b378fc3472b388a97d56d">User::setPassword</a></div><div class="ttdeci">void setPassword(string)</div><div class="ttdoc">atualiza o valor da senha</div><div class="ttdef"><b>Definition:</b> user.cpp:91</div></div>
+<div class="ttc" id="aclass_user_html_adb316ac38d5f62a967686e7b736a0469"><div class="ttname"><a href="class_user.html#adb316ac38d5f62a967686e7b736a0469">User::getName</a></div><div class="ttdeci">string getName()</div><div class="ttdoc">retorna o nome do usuário</div><div class="ttdef"><b>Definition:</b> user.cpp:56</div></div>
+<div class="ttc" id="aclass_user_html_af214bbaebab833a6790b784ac3e5809d"><div class="ttname"><a href="class_user.html#af214bbaebab833a6790b784ac3e5809d">User::setDate</a></div><div class="ttdeci">void setDate(string date)</div><div class="ttdoc">atualiza o valor da data de aniversário</div><div class="ttdef"><b>Definition:</b> user.cpp:101</div></div>
+<div class="ttc" id="aclass_user_html_afef418190a9d783a0b3de88e8b1e9787"><div class="ttname"><a href="class_user.html#afef418190a9d783a0b3de88e8b1e9787">User::getIdiom</a></div><div class="ttdeci">string getIdiom()</div><div class="ttdoc">retorna o idioma do usuário</div><div class="ttdef"><b>Definition:</b> user.cpp:66</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

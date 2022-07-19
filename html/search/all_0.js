@@ -1,9 +1,5 @@
 var searchData=
 [
-  ['city_0',['City',['../class_city.html',1,'']]],
-  ['citytest_1',['CityTest',['../class_city_test.html',1,'']]],
-  ['code_2',['Code',['../class_code.html',1,'Code'],['../class_code.html#a951ca1ea84bc7f919a05692ac4be5038',1,'Code::Code()']]],
-  ['codetest_3',['CodeTest',['../class_code_test.html',1,'']]],
-  ['country_4',['Country',['../class_country.html',1,'Country'],['../class_country.html#a4cba457856775a13a17dfcb11a77e224',1,'Country::Country()'],['../class_country.html#a6e38b71b034069ed799281e5495b2a60',1,'Country::Country(string country)']]],
-  ['countrytest_5',['CountryTest',['../class_country_test.html',1,'']]]
+  ['accommodation_0',['Accommodation',['../class_accommodation.html',1,'Accommodation'],['../class_accommodation.html#a6bc8f615e1bdb56c47f1c64d125ba6de',1,'Accommodation::Accommodation()']]],
+  ['accommodationtest_1',['AccommodationTest',['../class_accommodation_test.html',1,'']]]
 ];

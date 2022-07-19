@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['idiom_53',['Idiom',['../class_idiom.html',1,'']]],
-  ['idiomtest_54',['IdiomTest',['../class_idiom_test.html',1,'']]]
+  ['grade_62',['Grade',['../class_grade.html',1,'']]],
+  ['gradetest_63',['GradeTest',['../class_grade_test.html',1,'']]]
 ];

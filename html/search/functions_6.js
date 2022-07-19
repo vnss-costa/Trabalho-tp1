@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['password_77',['Password',['../class_password.html#a9ed0401599b14d501a8f46779048cdf2',1,'Password::Password()'],['../class_password.html#a2882019457d5f399cacce381b6c30762',1,'Password::Password(string password)']]]
+  ['name_93',['Name',['../class_name.html#a12a92d46d52b216ccaa86e3cb1539e58',1,'Name::Name()'],['../class_name.html#af2524c071f5b2ccf887cbd61460c4c70',1,'Name::Name(string name)']]]
 ];
