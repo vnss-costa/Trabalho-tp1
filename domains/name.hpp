@@ -1,7 +1,7 @@
 #ifndef DOMAINS_NAME_HPP_
 #define DOMAINS_NAME_HPP_
-#include <string>
 using namespace std;
+#include <stdexcept>
 
 /**
  * @brief Classe para o domínio nome
@@ -14,7 +14,7 @@ class Name
 private:
     string name;
 
-    void isValid(string name) const;
+    void isValid(string) const;
 
 public:
     /**

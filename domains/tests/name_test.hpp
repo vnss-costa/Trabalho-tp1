@@ -1,7 +1,6 @@
 #ifndef DOMAINS_TESTS_NAME_TEST_HPP_
 #define DOMAINS_TESTS_NAME_TEST_HPP_
 
-#include <string>
 #include "../name.hpp"
 using namespace std;
 
@@ -28,4 +27,4 @@ public:
     int run();
 };
 
-#endif // DOMAINS_TESTS_NAME_TEST_HPP_
+#endif //  DOMAINS_TESTS_NAME_TEST_HPP_

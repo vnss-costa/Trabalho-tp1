@@ -1,7 +1,4 @@
 #include "name.hpp"
-#include <string>
-#include <iostream>
-using namespace std;
 
 /**
  * @brief implementa��o da classe name
@@ -16,19 +13,19 @@ void Name::isValid(string name) const
     if (tamanho_name > 30)
         throw invalid_argument("Tamanho Invalido"); // confere tamanho
 
-    for (int i; i < tamanho_name; i++)
+    for (int i = 0; i < tamanho_name; i++)
     {
-        if (isupper(name[0]) != true) // confere se a primeira letra do name eh maiuscula
+        if (islower(name[0])) // confere se a primeira letra do name eh maiuscula
             throw invalid_argument("Primeiro nome deve comecar com letra maiuscula");
 
-        if ((isspace(name[i]) && isspace(name[i + 1])) == true) // confere espaco duplo
+        if (name[i] == ' ' && name[i + 1] == ' ') // confere espaco duplo
             throw invalid_argument("Nao pode haver dois espacos");
 
-        if (isspace(name[i]) && isupper(name[i + 1]) != true) // confere se o sobrename eh maiusculo
-            throw invalid_argument("Sobrename deve comecar com letra maiuscula");
+        if (name[i] == ' ' && islower(name[i + 1])) // confere se o sobrename eh maiusculo
+            throw invalid_argument("Sobrenome deve comecar com letra maiuscula");
 
-        if ((isalpha(name[i]) || isspace(name[i])) != true) // confere se tem entrada diferente de aspaco e letra
-            throw invalid_argument("Entrada so pode conter epaco ou letra");
+        if (!(isalpha(name[i]) || name[i] == ' ')) // confere se tem entrada diferente de aspaco e letra
+            throw invalid_argument("Entrada so pode conter espaco ou letra");
     }
 }
 
