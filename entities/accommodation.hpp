@@ -2,6 +2,7 @@
 #define ENTITIES_ACCOMMODATION_HPP_
 #include "../domains/grade.hpp"
 #include "../domains/city.hpp"
+#include "../domains/country.hpp"
 #include "../domains/code.hpp"
 #include "../domains/description.hpp"
 
@@ -15,9 +16,10 @@
 class Accommodation
 {
 private:
-  Grade grade;
-  City city;
   Code code;
+  City city;
+  Country country;
+  Grade grade;
   Description description;
 
 public:
@@ -25,14 +27,6 @@ public:
    * @brief construtor padrão da entidade acomodação
    */
   Accommodation();
-
-  /**
-   * @brief atauliza a cidade dessa entidade
-   *
-   * @param city nome da nova cidade
-   * @throw invalid_argument caso o valor não seja válido
-   */
-  void setCity(string);
 
   /**
    * @brief atualiza o código da entidade
@@ -43,12 +37,20 @@ public:
   void setCode(string);
 
   /**
-   * @brief atualiza o endereço da entidade
+   * @brief atauliza a cidade dessa entidade
    *
-   * @param address novo endereço da entidade
+   * @param city nome da nova cidade
    * @throw invalid_argument caso o valor não seja válido
    */
-  void setAddress(string);
+  void setCity(string);
+
+  /**
+   * @brief atualiza o país da entidade
+   *
+   * @param country novo país da entidade
+   * @throw invalid_argument caso o valor não seja válido
+   */
+  void setCountry(string);
 
   /**
    * @brief atualiza o valor da grade da entidade
@@ -66,35 +68,7 @@ public:
    */
   void setDescription(string);
 
-  /**
-   * @brief atualiza a duração da entidade
-   *
-   * @param duration a nova duração da entidade
-   * @throw invalid_argument caso o valor não seja válido
-   */
-  void setDuration(unsigned int);
-
   // Get Methods
-  /**
-   * @brief retorna o valor do tempo da entidade
-   *
-   * @return string com o tempo da entidade
-   */
-  string getTime();
-
-  /**
-   * @brief retorna o valor da cidade da entidade
-   *
-   * @return string com a cidade da entidade
-   */
-  string getCity();
-
-  /**
-   * @brief retorna o valor do título da entidade
-   *
-   * @return string com o título da entidade
-   */
-  string getTitle();
 
   /**
    * @brief retorna o valor do código da entidade
@@ -104,11 +78,18 @@ public:
   string getCode();
 
   /**
-   * @brief retorna o valor do endereço da entidade
+   * @brief retorna o valor da cidade da entidade
    *
-   * @return string com o endereço da entidade
+   * @return string com a cidade da entidade
    */
-  string getAddress();
+  string getCity();
+
+    /**
+   * @brief retorna o valor do país da entidade
+   *
+   * @return string com o país da entidade
+   */
+  string getCountry();
 
   /**
    * @brief retorna o valor da grade da entidade
@@ -124,13 +105,12 @@ public:
    */
   string getDescription();
 
-  /**
-   * @brief retorna o valor da duração da entidade
-   *
-   * @return string com a duração da entidade
-   */
-  unsigned int getDuration();
 };
+
+inline string Accommodation::getCode()
+{
+  return code.getCode();
+}
 
 inline Accommodation::Accommodation(){};
 
@@ -139,9 +119,9 @@ inline string Accommodation::getCity()
   return city.getCity();
 }
 
-inline string Accommodation::getCode()
+inline string Accommodation::getCountry()
 {
-  return code.getCode();
+  return country.getCountry();
 }
 
 inline unsigned int Accommodation::getGrade()
