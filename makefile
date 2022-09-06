@@ -1,7 +1,9 @@
 all:
 	+$(MAKE) -C domains
 	+$(MAKE) -C entities
-	g++ -std=c++17 -Wall ./*/*/*.o ./*/*.o main.cpp -o main.exe
+	+$(MAKE) -C Controllers
+	+$(MAKE) -C stubs
+	g++ -std=c++17 -Wall ./*/*/*/*.o ./*/*/*.o ./*/*.o main.cpp -o main.exe
 
 clean:
 	rm -rf ./*/*.o ./*/*/*.exe ./*/*/*.o ./*/*/*/*.o

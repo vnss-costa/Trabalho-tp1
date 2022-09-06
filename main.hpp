@@ -15,6 +15,17 @@
 #include "./entities/tests/review_test.hpp"
 #include "./entities/tests/user_test.hpp"
 
+#include "./Controllers/Apresentacao/autenticacao/autenticacao.h"
+#include "./Controllers/Apresentacao/conta/conta.h"
+
+#include "./Interfaces/Apresentacao/autenticacao.h"
+#include "./Interfaces/Apresentacao/conta.h"
+#include "./Interfaces/Servicos/autenticacao.h"
+#include "./Interfaces/Servicos/conta.h"
+
+#include "./stubs/stubs.h"
+#include "./Controllers/Apresentacao/ControladoraApr/controladoraApresentacao.h"
+
 /**
  * @brief Classe principal para conexão dos arquivos
  *
