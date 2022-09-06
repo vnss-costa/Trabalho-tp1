@@ -31,6 +31,20 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
+		<Unit filename="Controllers/Apresentacao/ControladoraApr/controladoraApresentacao.cpp" />
+		<Unit filename="Controllers/Apresentacao/ControladoraApr/controladoraApresentacao.h" />
+		<Unit filename="Controllers/Apresentacao/autenticacao/autenticacao.cpp" />
+		<Unit filename="Controllers/Apresentacao/autenticacao/autenticacao.h" />
+		<Unit filename="Controllers/Apresentacao/conta/conta.cpp" />
+		<Unit filename="Controllers/Apresentacao/conta/conta.h" />
+		<Unit filename="Controllers/Servicos/autenticacao/autenticacao.cpp" />
+		<Unit filename="Controllers/Servicos/autenticacao/autenticacao.h" />
+		<Unit filename="Controllers/Servicos/conta/conta.cpp" />
+		<Unit filename="Controllers/Servicos/conta/conta.h" />
+		<Unit filename="Interfaces/Apresentacao/autenticacao.h" />
+		<Unit filename="Interfaces/Apresentacao/conta.h" />
+		<Unit filename="Interfaces/Servicos/autenticacao.h" />
+		<Unit filename="Interfaces/Servicos/conta.h" />
 		<Unit filename="domains/city.cpp" />
 		<Unit filename="domains/city.hpp" />
 		<Unit filename="domains/code.cpp" />
@@ -85,6 +99,8 @@
 		<Unit filename="entities/user.hpp" />
 		<Unit filename="main.cpp" />
 		<Unit filename="main.hpp" />
+		<Unit filename="stubs/stubs.cpp" />
+		<Unit filename="stubs/stubs.h" />
 		<Extensions />
 	</Project>
 </CodeBlocks_project_file>
